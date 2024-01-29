@@ -1,2 +1,2 @@
-# DigitalSynthesizers
-História de sintetizadores digitais
+# Educa
+Site de aprendizado online

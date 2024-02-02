@@ -1,2 +1,2 @@
 # DigitalSynthesizers
-Site que lista diferentes sintetizadores digitais e suas características.  
+Site que lista diferentes instrumentos sintetizadores e suas características.  

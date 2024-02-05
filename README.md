@@ -1,3 +1,20 @@
 # DigitalSynthesizers
-Site que ensina síntese sonora e sound design para ajudar a melhorar o seu som.
-Biblioteca de fonte de recursos para ajudar o músico.
+Este repositório hospeda o projeto do site DigitalSynthesizers
+## Autor
+Lucas Santos da Silva
+## Links utilizados
+
+
+[Google Trends]https://trends.google.com/trends/
+
+[Google Fonts]https://fonts.google.com/
+
+[Validator W3]https://validator.w3.org/
+
+[draw.io]https://app.diagrams.net/
+
+[Icon Finder]https://www.iconfinder.com/
+
+[Pixabay]https://pixabay.com/pt/
+
+[Image Compressor]https://imagecompressor.com/

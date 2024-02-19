@@ -1,4 +1,6 @@
 ![GitHub License](https://img.shields.io/github/license/Lucas-Santos-Da-Silva/DigitalSynthesizers)
+![Website](https://img.shields.io/website?url=https%3A%2F%2Flucas-santos-da-silva.github.io%2FDigitalSynthesizers%2F)
+
 
 # DigitalSynthesizers
 Este repositório hospeda o projeto do site DigitalSynthesizers

@@ -2,48 +2,52 @@
 @author Lucas Santos da Silva
 @link https://joseassis.com.br
 */
+/*Importar fonte*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jacquarda+Bastarda+9&family=Manrope:wght@200..800&family=Monofett&display=swap');
 /* CSS RESET */
-{
+* {
 margin:0;
 padding:0;
 border:0;
 }
-/*Importar fonte*/
-
 
 /* Smartphone portrait */
 
 /* Smartphone landscape */
 @media (min-width:576px){
     .Container{
-        max-width: 540px;
-       
+        max-width:540px;
+    }
+    .Flex{
+        flex-direction:row-reverse;
+        justify-content:space-between;
+        align-items:center;
+    };
+    #social{
+        margin-bottom:0px;
     }
 }
 /* Tablet portrait */
 @media (min-width:768px){
     .Container{
-        max-width: 720px;
-        
+        max-width:720px;
     }
 }
 /* Tablet landscape */
 @media (min-width:992px){
     .Container{
-        max-width: 960px;
-        
+        max-width:960px;
     }
 }
 /* PCs ou notebooks HD */
 @media (min-width:1200px){
     .Container{
-        max-width: 1000px;
+        max-width:1000px;
     }
     .Flex{
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction:row-reverse;
+        justify-content:space-between;
+        align-items:center;
     }
     #copyright{
     
@@ -52,58 +56,58 @@ border:0;
 /* PCs ou notebooks Full HD */
 @media (min-width:1400px){
     .Container{
-        max-width: 1140px;
+        max-width:1140px;
         
     }
 }
 /* Televisão */
 
 html{
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
 
 body{
-    font-family: "Manrope", sans-serif;
+    font-family:"Manrope",sans-serif;
     font-size: 1em;
 }
 h1{
-    font-family: "Monofett", monospace;
-    font-size: 2em;
+    font-family:"Monofett",monospace;
+    font-size:2em;
 }
 /* Centralização de conteúdo */
 .Container{
-    margin: 0 auto;
-    padding: 50px 15px 50px 15px;
-    align-items: center;
+    margin:0 auto;
+    padding:50px 15px 50px 15px;
+    align-items:center;
 }
 .Flex{
-    display: flex;
+    display:flex;
 }
 footer{
-    background-color: var(--pretoLayout);
-    color: var(--TextoLayout);
-    text-align: center;
+    background-color:var(--pretoLayout);
+    color:var(--TextoLayout);
+    text-align:center;
 }
 #social{
-    margin-bottom: 25px;       
+    margin-bottom:25px;       
 }
-li {
-    display: inline-block;
-    padding-right: 10px;
+li{
+    display:inline-block;
+    padding-right:10px;
 }
 .Flex{
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
 }
 :root{
-    --TextoLayout: #ffffff;
-    --pretoLayout: #000000;
+    --TextoLayout:#ffffff;
+    --pretoLayout:#000000;
 }
 
 /* Smartphone portrait */
 /********** Cabeçalho **********/
-#logo img {
-    width: 130px;
-    height: 100px;
+#logo img{
+    width:130px;
+    height:100px;
 }

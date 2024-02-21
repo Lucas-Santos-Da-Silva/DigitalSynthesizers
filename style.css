@@ -100,3 +100,10 @@ li {
     --TextoLayout: #ffffff;
     --pretoLayout: #000000;
 }
+
+/* Smartphone portrait */
+/********** Cabeçalho **********/
+#logo img {
+    width: 130px;
+    height: 100px;
+}

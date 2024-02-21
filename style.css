@@ -94,6 +94,14 @@ footer{
 li{
     display:inline-block;
     padding-right:10px;
+    color:white;
+}
+header a{
+    text-decoration:none;
+    color:white;
+}
+footer a{
+    text-decoration:none;
 }
 .Flex{
     flex-direction:column;

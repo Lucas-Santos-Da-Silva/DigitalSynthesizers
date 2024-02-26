@@ -10,9 +10,124 @@ margin:0;
 padding:0;
 border:0;
 }
+/** LAYOUT */
+html{
+    scroll-behavior:smooth;
+}
+body{
+    font-family:"Manrope",sans-serif;
+    font-size: 1em;
+}
+section{
+    margin: 0 auto ;
+    display: flex; 
+    justify-content: center;
+}
+h1{
+    font-family:"Monofett",monospace;
+    font-size:2em;
+}
+/* Centralização de conteúdo */
+.Container{
+    margin:0 auto;
+    padding:50px 15px 50px 15px;
+    align-items:center;
+}
+.MenuFlex{
+    flex-direction: row;
+    display:flex;
+    justify-content: space-between;
+}
+
+.Flex{
+    display:flex;
+    flex-direction:space-between;
+}
+
+.Card{
+    margin-top: 30px;
+    width: 338px;
+    height: 520px;
+    background-color: var(--backgroundCard);
+    border: 1px solid var(--bordaLayout);
+    border-radius: 25px;
+    align-items: center;
+    text-align: center;
+}
+.Card img{
+    border-radius: 25px 25px 0px 0px;
+}
+.Card h3 {
+    margin: 150px 30px 0px 30px;
+}
+.Card p {
+    padding: 10px 30px 25px 30px;
+    text-align: left;
+    color: var(--cinzaTexto);
+}
+.Button{
+    text-decoration: none;
+    background-color: var(--vermelhoLayout);
+    color: var(--textoLayout);
+    padding: 10px 40px;
+    border: 1px solid var(--bordaLayout);
+    border-radius: 25px;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+#logo img{
+    width:130px;
+    height:100px;
+    margin: 10px 0px 0px 10px;
+}
+footer{
+    background-color:var(--pretoLayout);
+    color:var(--textoLayout);
+    text-align:center;
+}
+#social{
+    margin-bottom:25px;       
+}
+header a{
+    text-decoration:none;
+    color:white;
+}
+footer a{
+    text-decoration:none;
+}
+:root{
+    --textoLayout:#ffffff;
+    --pretoLayout:#000000;
+    --backgroundCard: #f1f3f5;
+    --bordaLayout: #000;
+    --vermelhoLayout: #c00000;
+    --cinzaTexto: #434343;
+}
+
+
+
 
 /* Smartphone portrait */
-
+@media (min-width:375px){
+/********** Cabeçalho **********/
+.Container{
+    max-width:350px;
+}
+.MenuFlex {
+    height: 130px;
+    background-color: rgb(0, 255, 110);
+    margin: auto;
+    align-items:center;
+}
+#logo img{
+    width:130px;
+    height:100px;
+    margin: 10px 0px 0px 10px;
+}
+#social{
+    margin-bottom:0px;       
+}
+}
 /* Smartphone landscape */
 @media (min-width:576px){
     .Container{
@@ -26,11 +141,37 @@ border:0;
     #social{
         margin-bottom:0px;
     }
+    /********** Cabeçalho **********/
+    .MenuFlex {
+        height: 130px;
+        background-color: rgb(43, 0, 255);
+        margin: auto;
+        align-items:center;
+        justify-content: space-between;
+    }
+    #logo img{
+        width:130px;
+        height:100px;
+        margin: 10px 0px 0px 10px;
+    }
 }
 /* Tablet portrait */
 @media (min-width:768px){
     .Container{
         max-width:720px;
+    }
+    /********** Cabeçalho **********/
+    .MenuFlex {
+        height: 180px;
+        background-color: rgb(255, 0, 136);
+        margin: auto;
+        align-items:center;
+        justify-content: space-between;
+    }
+    #logo img{
+        width:150px;
+        height:120px;
+        margin: 10px 0px 0px 10px;
     }
 }
 /* Tablet landscape */
@@ -38,8 +179,21 @@ border:0;
     .Container{
         max-width:960px;
     }
+    /********** Cabeçalho **********/
+    .MenuFlex {
+        height: 180px;
+        background-color: rgb(255, 0, 247);
+        margin: auto;
+        align-items:center;
+        justify-content: space-between;
+    }
+    #logo img{
+        width:150px;
+        height:120px;
+        margin: 10px 0px 0px 10px;
+    }
 }
-/* PCs ou notebooks HD */
+/* PCs, notebooks HD ou TV */
 @media (min-width:1200px){
     .Container{
         max-width:1000px;
@@ -49,73 +203,23 @@ border:0;
         justify-content:space-between;
         align-items:center;
     }
-    #copyright{
-    
-    }
 }
 /* PCs ou notebooks Full HD */
 @media (min-width:1400px){
     .Container{
-        max-width:1140px;
-        
+        max-width:1140px;   
+    }
+    .MenuFlex {
+        height: 130px;
+        background-color: rgb(217, 255, 0);
+        margin: auto;
+        align-items:center;
+        justify-content: space-between;
+    }
+    #logo img{
+        width:130px;
+        height:100px;
+        margin: 10px 0px 0px 10px;
     }
 }
 /* Televisão */
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    font-family:"Manrope",sans-serif;
-    font-size: 1em;
-}
-h1{
-    font-family:"Monofett",monospace;
-    font-size:2em;
-}
-/* Centralização de conteúdo */
-.Container{
-    margin:0 auto;
-    padding:50px 15px 50px 15px;
-    align-items:center;
-}
-.Flex{
-    display:flex;
-}
-footer{
-    background-color:var(--pretoLayout);
-    color:var(--TextoLayout);
-    text-align:center;
-}
-#social{
-    margin-bottom:25px;       
-}
-li{
-    display:inline-block;
-    padding-right:10px;
-    color:white;
-}
-header a{
-    text-decoration:none;
-    color:white;
-}
-footer a{
-    text-decoration:none;
-}
-.Flex{
-    flex-direction:column;
-    justify-content:space-between;
-    align-items:center;
-}
-:root{
-    --TextoLayout:#ffffff;
-    --pretoLayout:#000000;
-}
-
-/* Smartphone portrait */
-/********** Cabeçalho **********/
-#logo img{
-    width:130px;
-    height:100px;
-}

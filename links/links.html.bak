@@ -10,6 +10,12 @@
     <!-- Importante para SEO-->
     <meta name="description" content="Aprenda sobre síntese sonora, sound design, equipamentos de áudio e como aplicar esse conhecimento para melhorar seu som">
     <link rel="icon" href="../img/favicon.png">
+	<style>
+	.Container{
+	display: flex;
+	flex-direction: column;
+}
+	</style>
 </head>
     <body>
         <!--Cabeçalho-->
@@ -66,6 +72,9 @@
 			Coleção de vários plugins gratuitos, nem todos são de boa qualidade, mas são ótimos para estudo
 			</p>
 			<br>
+			
+			
+			
         </section>
         <footer>
             <div class="Container Flex">

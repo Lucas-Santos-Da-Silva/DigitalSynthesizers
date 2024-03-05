@@ -5,20 +5,6 @@
 /*Importar fonte*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jacquarda+Bastarda+9&family=Manrope:wght@200..800&family=Monofett&display=swap');
 /* CSS RESET */
-:root{
-    --LayoutCorBranca:#ffffff;
-    --LayoutCorPreta:#000000;
-    --CardFundo: #f1f3f5;
-    --TextoCinza: #434343;
-	--TextoBranco: #ffffff;
-	--TextoPreto:#000000;
-	--LayoutCorPrincipal:#0B6AB0;
-	--LayoutCorSombra:#084387;
-	--LayoutCorSombraProfunda:#042C71;
-	--LayoutCorSecundária:#F36B1C;
-	--LayoutCorSombraSecundária:#CE4912;
-	--LayoutCorAcento:#F8D605;
-}
 * {
 margin:0;
 padding:0;
@@ -38,42 +24,33 @@ section{
     justify-content: center;
 }
 h1{
-    font-family:"Manrope",sans-serif;
+    font-family:"Monofett",monospace;
     font-size:2em;
 }
 /* Centralização de conteúdo */
 .Container{
+    margin:0 auto;
     padding:50px 15px 50px 15px;
 }
 .MenuFlex{
+    flex-direction: row;
     display:flex;
-	flex-direction: row;
-	align-items:center;
-	align-content:center;
     justify-content: space-between;
-	margin:auto;
-	background-color: var(--LayoutCorPrincipal);
 }
-.MenuFlex a{
-	color: var(--TextoBranco);
-}
+
 .Flex{
     display:flex;
     justify-content:space-between;
-	flex-direction:row-reverse;
-	align-items:center;
 }
 
 .Card{
     margin-top: 30px;
     width: 338px;
     height: 520px;
-    background-color: var(--CardFundo);
-    border: 1px solid var(--LayoutCorPreta);
+    background-color: var(--backgroundCard);
+    border: 1px solid var(--bordaLayout);
     border-radius: 25px;
-    display:flex;
-	flex-direction:column;
-	align-content: space-between;
+    align-items: center;
     text-align: center;
 }
 .Card img{
@@ -85,14 +62,14 @@ h1{
 .Card p {
     padding: 10px 30px 25px 30px;
     text-align: left;
-    color: var(--TextoCinza);
+    color: var(--cinzaTexto);
 }
 .Button{
     text-decoration: none;
-    background-color: var(--LayoutCorSecundária);
-    color: var(--TextoBranco);
+    background-color: var(--vermelhoLayout);
+    color: var(--textoLayout);
     padding: 10px 40px;
-    border: 1px solid var(--LayoutCorPreta);
+    border: 1px solid var(--bordaLayout);
     border-radius: 25px;
     font-size: 1.2em;
     font-weight: 700;
@@ -103,11 +80,9 @@ h1{
     margin: 10px 0px 0px 10px;
 }
 footer{
-    background-color:var(--LayoutCorPreta);
-    color:var(--TextoBranco);
-    position: absolute;
-    bottom: 0px;
-    width:100%;
+    background-color:var(--pretoLayout);
+    color:var(--textoLayout);
+    text-align:center;
 }
 #social{
     margin-bottom:25px;       
@@ -119,19 +94,17 @@ header a{
 footer a{
     text-decoration:none;
 }
-#topo{
-	opacity: 0.5;
+:root{
+    --textoLayout:#ffffff;
+    --pretoLayout:#000000;
+    --backgroundCard: #f1f3f5;
+    --bordaLayout: #000;
+    --borda: #000;
+    --vermelhoLayout: #c00000;
+    --cinzaTexto: #434343;
 }
-.Card a:hover{
-        color: var(--TextoPreto);
-    }
-.Titulo{
-	color: var(--TextoPreto);
-	position: absolute;
-	width: 100%;
-	text-align: center;
-	font-size: 18px;
-	}
+
+
 
 
 
@@ -147,8 +120,9 @@ footer a{
     }
     .MenuFlex {
         height: 130px;
-        
+        background-color: rgb(5, 109, 50);
         margin: auto;
+        align-items:center;
     }
     #logo img{
         width:130px;
@@ -218,7 +192,7 @@ footer a{
     /********** Cabeçalho **********/
     .MenuFlex {
         height: 130px;
-       
+        background-color: rgb(23, 9, 93);
         margin: auto;
         align-items:center;
         justify-content: space-between;
@@ -243,8 +217,10 @@ footer a{
     /********** Cabeçalho **********/
     .MenuFlex {
         height: 180px;
+        background-color: rgb(97, 7, 55);
         margin: auto;
         align-items:center;
+        justify-content: space-between;
     }
     #logo img{
         width:150px;
@@ -257,20 +233,6 @@ footer a{
         top: 10px;
         right: 10px;
     }
-    .Card{
-        width: 258px;
-        height: 550px;
-    }
-    .Button{
-        padding: 5px 20px;
-        font-size: 1.2em;
-    }
-    section{
-        justify-content: flex-start;
-    }
-    .Titulo{
-        font-size: 0.8em;
-    }
 }
 /* Tablet landscape */
 @media (min-width:992px){
@@ -279,53 +241,22 @@ footer a{
     }
     /********** Cabeçalho **********/
     .MenuFlex {
-        height: 74px;
+        height: 180px;
+        background-color: rgb(12, 73, 114);
         margin: auto;
-		display:flex;
-		flex-direction: row;
-		align-items:center;
-		align-content:center;
-		justify-content: space-between;
-		margin:auto;
+        align-items:center;
+        justify-content: space-between;
     }
     #logo img{
-        width:75px;
-        height:60px;
+        width:150px;
+        height:120px;
         margin: 10px 0px 0px 10px;
     }
     label {
-        font-size: 2em;
+        font-size: 3em;
         position: fixed;
-        top: 18px;
-        right: 30px;
-    }
-	nav ul{
-        list-style: none;
-        background-color: rgba(60, 60, 60, 0.8);
-        height: 100vh;
-        position: fixed;
-        top: 73px;
-        right: -70%;/*estratégia para remover menu */
-        width:70%;
-        transition: all 0.5s;
-    }
-    #check:checked~ul{
-        right: 0;
-    }
-    nav ul li{
-        border-bottom: 0.5px solid var(--LayoutCorPreta);
-        padding: 15px;
-    }
-    nav ul li a{
-        text-decoration: none;
-        color: var(--TextoBranco)
-    }
-    .Card{
-        width: 358px;
-        height: 400px;
-    }
-    .Card h3 {
-        margin: 50px 30px 0px 30px;
+        top: 10px;
+        right: 10px;
     }
 }
 /* PCs, notebooks HD ou TV */
@@ -333,8 +264,17 @@ footer a{
     .Container{
         max-width:1000px;
     }
+    .Flex{
+        flex-direction:row-reverse;
+        justify-content:space-between;
+        align-items:center;
+    }
     .MenuFlex {
         height: 130px;
+        background-color: rgb(105, 11, 83);
+        margin: auto;
+        align-items:center;
+        justify-content: space-between;
     }
     #logo img{
         width:130px;
@@ -356,10 +296,10 @@ footer a{
         float: left;
     }
     nav ul li a{
-        color: var(--TextoPreto)
+        color: var(--textoLayout)
     }
-	nav ul li a:hover{
-        color: var(--TextoBranco);
+    nav ul li a:hover{
+        color: var(--vermelhoLayout);
     }
 }
 /* PCs ou notebooks Full HD */
@@ -369,9 +309,9 @@ footer a{
     }
     .MenuFlex {
         height: 130px;
-        background-color: ;
+        background-color: rgb(91, 105, 11);
         margin: auto;
-		display:flex;
+        align-items:center;
         justify-content: space-between;
     }
     #logo img{
@@ -382,9 +322,4 @@ footer a{
     label {
         display: none;
     }
-}
-.MenuFlex{
-    flex-direction: row;
-    display:flex;
-    justify-content: space-between;
 }

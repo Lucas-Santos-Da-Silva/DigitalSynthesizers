@@ -22,6 +22,7 @@ section{
     margin: 0 auto ;
     display: flex; 
     justify-content: center;
+    
 }
 h1{
     font-family:"Monofett",monospace;
@@ -83,6 +84,9 @@ footer{
     background-color:var(--pretoLayout);
     color:var(--textoLayout);
     text-align:center;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
 }
 #social{
     margin-bottom:25px;       

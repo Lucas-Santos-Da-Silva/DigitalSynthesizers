@@ -17,6 +17,10 @@ html{
 body{
     font-family:"Manrope",sans-serif;
     font-size: 1em;
+    
+}
+body h2, h3, p{
+    color:var(--pretoLayout);
 }
 section{
     margin: 0 auto ;
@@ -25,7 +29,6 @@ section{
     
 }
 h1{
-    font-family:"Monofett",monospace;
     font-size:2em;
 }
 /* Centralização de conteúdo */
@@ -37,22 +40,58 @@ h1{
     flex-direction: row;
     display:flex;
     justify-content: space-between;
+    background-color:#1b1b1b
 }
 
 .Flex{
     display:flex;
     justify-content:space-between;
 }
+/*Banner*/
 
+main {
+    background: url(./img/background.jpg);
+    height: 55vh;
+    background-size:cover;
+    background-position:center;
+    text-align:center;
+    text-shadow: 0.2em 0.2em #000000;
+}
+
+/*
+#banner{
+    position: absolute;
+    right:50%;
+    top:50%;
+    transform: translate(-50%, -50%)
+    text-align: center;
+}
+*/
+main h2{
+    color: var(--textoLayout);
+    margin-bottom: 25px;
+    font-size: 1em;
+    font-weight: 300;
+}
+main h1{
+    color: var(--textoLayout);
+    display: inline;
+    font-size: 1.5em;
+    font-weight: 700;
+}
 .Card{
-    margin-top: 30px;
+    margin-top: 0px;
     width: 338px;
     height: 520px;
     background-color: var(--backgroundCard);
+    border-radius: 15px;
+    /*
     border: 1px solid var(--bordaLayout);
-    border-radius: 25px;
+    
+    */
     align-items: center;
     text-align: center;
+    
 }
 .Card img{
     border-radius: 25px 25px 0px 0px;
@@ -70,8 +109,10 @@ h1{
     background-color: var(--vermelhoLayout);
     color: var(--textoLayout);
     padding: 10px 40px;
+    /*
     border: 1px solid var(--bordaLayout);
-    border-radius: 25px;
+    */
+    border-radius: 10px;
     font-size: 1.2em;
     font-weight: 700;
 }
@@ -88,8 +129,11 @@ footer{
     bottom: 0px;
     width: 100%;
 }
+footer p{
+    color:var(--textoLayout);
+}
 #social{
-    margin-bottom:25px;       
+    margin-bottom:25px;   
 }
 header a{
     text-decoration:none;
@@ -97,6 +141,9 @@ header a{
 }
 footer a{
     text-decoration:none;
+}
+#topo{
+    opacity: 50%;
 }
 :root{
     --textoLayout:#ffffff;
@@ -117,27 +164,42 @@ footer a{
     #social{
         margin-bottom:0px;       
     }
-    
+    footer p{
+        font-size:0.75em;
+    }
+    footer div a img{
+        width: 30px;
+        height: 30px;   
+        display: inline-block; 
+    }
+    footer div{
+        margin:10px;
+    }
+    #topo{
+        height: 0px;
+        width: 0px;
+        position:fixed;
+        bottom: 100px;
+        right: 100px;
+        color: rgba(0, 0, 0, 0.2)
+    }
+    #topo img{
+        height: 85px;
+        width: 85px;
+    }
     /********** Cabeçalho **********/
     .Container{
         max-width:350px;
     }
     .MenuFlex {
-        height: 130px;
-        background-color: rgb(5, 109, 50);
+        height: 70px;
         margin: auto;
         align-items:center;
     }
     #logo img{
-        width:130px;
-        height:100px;
+        width:53px;
+        height:48px;
         margin: 10px 0px 0px 10px;
-    }
-    #topo{
-        position:fixed;
-        bottom: 0px;
-        right: 0px;
-        color: rgba(0, 0, 0, 0.2)
     }
     #check{
         display:none;
@@ -146,13 +208,13 @@ footer a{
     label {
         font-size: 1em;
         position: fixed;
-        top: 10px;
+        top: 5px;
         right: 10px;
         font-size:3em;
+        color:var(--textoLayout)
     }
     nav ul{
         list-style: none;
-        background-color: rgba(60, 60, 60, 0.8);
         height: 100vh;
         position: fixed;
         top: 80px;
@@ -171,13 +233,8 @@ footer a{
         text-decoration: none;
         color: var(--textoLayout)
     }
-    footer div a img{
-        width: 30px;
-        height: 30px;   
-        display: inline-block; 
-    }
-    footer div{
-        margin:10px;
+    #banner{
+        align-content: center;
     }
 }
 /* Smartphone landscape */
@@ -193,25 +250,41 @@ footer a{
     #social{
         margin-bottom:0px;
     }
+    .Card{
+        background-color: #edecec;
+    }
+    #topo{
+        height: 0px;
+        width: 0px;
+        position:fixed;
+        bottom: 100px;
+        right: 100px;
+        color: rgba(0, 0, 0, 0.2)
+    }
+    #topo img{
+        height: 85px;
+        width: 85px;
+    }
     /********** Cabeçalho **********/
     .MenuFlex {
-        height: 130px;
-        background-color: rgb(23, 9, 93);
+        height: 50px;
         margin: auto;
         align-items:center;
         justify-content: space-between;
     }
     #logo img{
-        width:130px;
-        height:100px;
+        width:55px;
+        height:45px;
         margin: 10px 0px 0px 10px;
     }
     label {
         position: fixed;
-        top: 10px;
+        top: 5px;
         right: 10px;
-        font-size:3em;
+        font-size:1.5em;
+        color:var(--textoLayout)
     }
+    
 }
 /* Tablet portrait */
 @media (min-width:768px){
@@ -220,23 +293,42 @@ footer a{
     }
     /********** Cabeçalho **********/
     .MenuFlex {
-        height: 180px;
-        background-color: rgb(97, 7, 55);
+        height: 70px;
         margin: auto;
         align-items:center;
         justify-content: space-between;
     }
+    body{
+        font-size: 200%;
+    }
     #logo img{
-        width:150px;
-        height:120px;
+        width:55px;
+        height:45px;
         margin: 10px 0px 0px 10px;
     }
     label {
-        font-size: 3em;
+        font-size: 1.5em;
         position: fixed;
-        top: 10px;
+        top: 5px;
         right: 10px;
     }
+    .Card{
+        margin-top: 30px;
+        width: 638px;
+        height: 780px;
+    }
+    .Card img{
+        height: 300px;
+        width: 350px;
+    }
+    .Card h3 {
+        margin: 150px 30px 0px 30px;
+    }
+    .Card p {
+        padding: 10px 30px 25px 30px;
+        
+    }
+
 }
 /* Tablet landscape */
 @media (min-width:992px){
@@ -245,21 +337,24 @@ footer a{
     }
     /********** Cabeçalho **********/
     .MenuFlex {
-        height: 180px;
-        background-color: rgb(12, 73, 114);
+        height: 70px;
         margin: auto;
         align-items:center;
         justify-content: space-between;
+        
+    }
+    .MenuFlex a{
+        font-size: 4em;
     }
     #logo img{
-        width:150px;
-        height:120px;
-        margin: 10px 0px 0px 10px;
+        width:55px;
+        height:45px;
+        margin: 00px 0px 0px 10px;
     }
     label {
-        font-size: 3em;
+        font-size: 1.5em;
         position: fixed;
-        top: 10px;
+        top: 5px;
         right: 10px;
     }
 }
@@ -275,7 +370,6 @@ footer a{
     }
     .MenuFlex {
         height: 130px;
-        background-color: rgb(105, 11, 83);
         margin: auto;
         align-items:center;
         justify-content: space-between;
@@ -313,7 +407,6 @@ footer a{
     }
     .MenuFlex {
         height: 130px;
-        background-color: rgb(91, 105, 11);
         margin: auto;
         align-items:center;
         justify-content: space-between;

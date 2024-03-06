@@ -1,0 +1,19 @@
+[Google Trends]https://trends.google.com/trends/
+
+[Google Fonts]https://fonts.google.com/
+
+[Validator W3]https://validator.w3.org/
+
+[draw.io]https://app.diagrams.net/
+
+[Icon Finder]https://www.iconfinder.com/
+
+[Pixabay]https://pixabay.com/pt/
+
+[Image Compressor]https://imagecompressor.com/
+
+[Github Shield]https://shields.io
+
+https://home.unicode.org/
+
+https://gs.statcounter.com/

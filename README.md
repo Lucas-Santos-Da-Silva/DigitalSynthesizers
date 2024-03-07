@@ -14,20 +14,20 @@ Este repositório hospeda o projeto do site DigitalSynthesizers
 ## Autor
 Lucas Santos da Silva
 ## Links utilizados
+[Google Trends](https://trends.google.com.br/trends/)
 
+[Google Fonts](https://fonts.google.com)
 
-[Google Trends]https://trends.google.com/trends/
+[Validador W3C HTML](https://validator.w3.org/#validate_by_upload)
 
-[Google Fonts]https://fonts.google.com/
+[Validador W3C CSS](https://jigsaw.w3.org/css-validator/#validate_by_upload)
 
-[Validator W3]https://validator.w3.org/
+[Draw.io](https://app.diagrams.net)
 
-[draw.io]https://app.diagrams.net/
+[Iconfinder](https://www.iconfinder.com)
 
-[Icon Finder]https://www.iconfinder.com/
+[Pixabay](https://pixabay.com/pt/)
 
-[Pixabay]https://pixabay.com/pt/
+[Optimizila](https://imagecompressor.com)
 
-[Image Compressor]https://imagecompressor.com/
-
-[Github Shield]https://shields.io
+[Unicode](https://unicode.org/charts/)

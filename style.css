@@ -466,9 +466,7 @@ footer div a img{
     }
     nav ul li a:hover{
         color: var(--vermelhoLayout);
-    }
-    nav li{
-        
+    }     
 }
 /* PCs ou notebooks Full HD */
 @media (min-width:1400px){

@@ -22,42 +22,33 @@ body{
 body h2, h3, p{
     color:var(--pretoLayout);
 }
+h1{
+    font-size:2em;
+}
+header a{
+    text-decoration:none;
+    color:var(--textoBranco);
+}
 section{
     margin: 0 auto ;
     display: flex; 
     justify-content: center;
     
 }
-h1{
-    font-size:2em;
-}
-/* Centralização de conteúdo */
-.Container{
-    margin:0 auto;
-    padding:50px 15px 50px 15px;
-}
-.MenuFlex{
-    flex-direction: row;
-    display:flex;
-    justify-content: space-between;
-    background-color:#1b1b1b
-}
-
-.Flex{
-    display:flex;
-    justify-content:space-between;
-}
 /*Banner*/
 
 main {
-    background: url(./img/background.jpg);
+    display:flex;
+    background: url(./img/background2.jpg);
     height: 55vh;
     background-size:cover;
     background-position:center;
     text-align:center;
-    text-shadow: 0.2em 0.2em #000000;
-}
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0.2em 0.2em var(--layoutPreto);
 
+}
 /*
 #banner{
     position: absolute;
@@ -68,22 +59,48 @@ main {
 }
 */
 main h2{
-    color: var(--textoLayout);
+    color: var(--textoBranco);
     margin-bottom: 25px;
     font-size: 1em;
     font-weight: 300;
 }
 main h1{
-    color: var(--textoLayout);
+    color: var(--textoBranco);
     display: inline;
     font-size: 1.5em;
     font-weight: 700;
 }
+/* Centralização de conteúdo */
+.Container{
+    margin:0 auto;
+    padding:50px 15px 50px 15px;
+    flex-direction:row;
+}
+#logo img{
+    width:130px;
+    height:100px;
+    margin: 10px 0px 0px 10px;
+}
+.MenuFlex{
+    flex-direction: row;
+    display:flex;
+    justify-content: space-between;
+    background-color:var(--layoutMenuFundo);
+}
+label {
+    color:var(--textoBranco);
+}
+.Flex{
+    display:flex;
+    justify-content:space-between;
+    flex-direction:row;
+}
+
 .Card{
     margin-top: 0px;
     width: 338px;
     height: 520px;
-    background-color: var(--backgroundCard);
+    background-color: var(--layoutCardFundo);
     border-radius: 15px;
     /*
     border: 1px solid var(--bordaLayout);
@@ -101,13 +118,13 @@ main h1{
 }
 .Card p {
     padding: 10px 30px 25px 30px;
-    text-align: left;
-    color: var(--cinzaTexto);
+    text-align: center;
+    color: var(--textoCinza);
 }
 .Button{
     text-decoration: none;
-    background-color: var(--vermelhoLayout);
-    color: var(--textoLayout);
+    background-color: var(--layoutCorSecundaria);
+    color: var(--textoPreto);
     padding: 10px 40px;
     /*
     border: 1px solid var(--bordaLayout);
@@ -116,43 +133,58 @@ main h1{
     font-size: 1.2em;
     font-weight: 700;
 }
-#logo img{
-    width:130px;
-    height:100px;
-    margin: 10px 0px 0px 10px;
-}
 footer{
-    background-color:var(--pretoLayout);
-    color:var(--textoLayout);
+    background-color:var(--layoutPreto);
+    color:var(--textoPreto);
     text-align:center;
     position: relative;
     bottom: 0px;
     width: 100%;
 }
 footer p{
-    color:var(--textoLayout);
+    color:var(--textoPreto);
 }
 #social{
-    margin-bottom:25px;   
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
 }
-header a{
-    text-decoration:none;
-    color:white;
+#social a {
+    padding-right: 10px;
+    margin:0px;
 }
+#social a{
+    height: 30px;
+    width: 30px;
+}
+
 footer a{
     text-decoration:none;
 }
 #topo{
     opacity: 50%;
 }
+#copyright p{
+    color:var(--textoBranco);
+}
+footer div a img{  
+    display: inline-block; 
+}
 :root{
-    --textoLayout:#ffffff;
-    --pretoLayout:#000000;
-    --backgroundCard: #f1f3f5;
-    --bordaLayout: #000;
-    --borda: #000;
-    --vermelhoLayout: #c00000;
-    --cinzaTexto: #434343;
+    --textoBranco: #ffffff;
+    --textoPreto: #000000;
+    --selectedItem: #c90f0f;
+    --selectedItem2:#b1ff09;
+    --layoutEnfase: #f18716;
+    --layoutPreto: #000000;
+    --layoutCorPrincipal: #0367A6;
+    --layoutCorSecundaria: #F2A007;
+    --layoutSombraPrincipal: #022859;
+    --layoutSombraPrincipal2: #010D26;
+    --layoutSombraSecundaria: #BF5B04;
+    --layoutCardFundo:#ebebeb ;
+    --layoutMenuFundo: #1f1e22;
+    --textoCinza: #6b6c75;
 }
 
 
@@ -161,9 +193,78 @@ footer a{
 
 /* Smartphone portrait */
 @media (min-width:375px){
-    #social{
-        margin-bottom:0px;       
+    #topo{
+        height: 0px;
+        width: 0px;
+        position:fixed;
+        bottom: 100px;
+        right: 100px;
+        color: rgba(var(--textoPreto), 0.2)
     }
+    #topo img{
+        height: 85px;
+        width: 85px;
+    }
+    .Flex{
+        flex-direction:row-reverse;
+    }
+    /********** Cabeçalho **********/
+    .Container{
+        max-width:350px;
+    }
+
+    .MenuFlex {
+        height: 70px;
+        margin: auto;
+        align-items:center;
+    }
+    #logo img{
+        width:63px;
+        height:48px;
+        margin: 10px 0px 0px 10px;
+    }
+    #check{
+        display:none;
+        
+    }
+    label {
+        font-size: 1.5em;
+        position: fixed;
+        top: 17px;
+        right: 10px;
+    }
+    nav ul{
+        list-style: none;
+        height: 100vh;
+        position: fixed;
+        top: 70px;
+        right: -70%;/*estratégia para remover menu */
+        width:70%;
+        transition: all 0.5s;
+        background-color: rgba(31, 30, 34, 0.8);
+    }
+    nav li:hover{
+        background-color: var(--layoutEnfase);
+        transition: all 0.5s;
+    }
+    #check:checked~ul{
+        right: 0px;
+    }
+    nav ul li{
+        padding: 15px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: var(--textoBranco)
+    }
+    /* main e section */
+    #banner{
+        align-content: center;
+    }
+    .Card{
+        background-color: var(--layoutCardFundo);
+    }
+    /* Rodapé */
     footer p{
         font-size:0.75em;
     }
@@ -175,67 +276,6 @@ footer a{
     footer div{
         margin:10px;
     }
-    #topo{
-        height: 0px;
-        width: 0px;
-        position:fixed;
-        bottom: 100px;
-        right: 100px;
-        color: rgba(0, 0, 0, 0.2)
-    }
-    #topo img{
-        height: 85px;
-        width: 85px;
-    }
-    /********** Cabeçalho **********/
-    .Container{
-        max-width:350px;
-    }
-    .MenuFlex {
-        height: 70px;
-        margin: auto;
-        align-items:center;
-    }
-    #logo img{
-        width:53px;
-        height:48px;
-        margin: 10px 0px 0px 10px;
-    }
-    #check{
-        display:none;
-        
-    }
-    label {
-        font-size: 1em;
-        position: fixed;
-        top: 5px;
-        right: 10px;
-        font-size:3em;
-        color:var(--textoLayout)
-    }
-    nav ul{
-        list-style: none;
-        height: 100vh;
-        position: fixed;
-        top: 80px;
-        right: -70%;/*estratégia para remover menu */
-        width:70%;
-        transition: all 0.5s;
-    }
-    #check:checked~ul{
-        right: 0;
-    }
-    nav ul li{
-        border-bottom: 0.5px solid var(--borda);
-        padding: 15px;
-    }
-    nav ul li a{
-        text-decoration: none;
-        color: var(--textoLayout)
-    }
-    #banner{
-        align-content: center;
-    }
 }
 /* Smartphone landscape */
 @media (min-width:576px){
@@ -243,22 +283,18 @@ footer a{
         max-width:540px;
     }
     .Flex{
-        flex-direction:row-reverse;
         justify-content:space-between;
         align-items:center;
     }
-    #social{
-        margin-bottom:0px;
-    }
     .Card{
-        background-color: #edecec;
+        background-color: var(--layoutCardFundo);
     }
     #topo{
         height: 0px;
         width: 0px;
         position:fixed;
-        bottom: 100px;
-        right: 100px;
+        bottom: 85px;
+        right: 85px;
         color: rgba(0, 0, 0, 0.2)
     }
     #topo img{
@@ -267,49 +303,80 @@ footer a{
     }
     /********** Cabeçalho **********/
     .MenuFlex {
-        height: 50px;
+        height: 70px;
         margin: auto;
         align-items:center;
         justify-content: space-between;
     }
     #logo img{
-        width:55px;
-        height:45px;
+        width:63px;
+        height:48px;
         margin: 10px 0px 0px 10px;
     }
     label {
+        font-size: 1.5em;
         position: fixed;
-        top: 5px;
+        top: 17px;
         right: 10px;
-        font-size:1.5em;
-        color:var(--textoLayout)
     }
-    
+    nav ul{
+        height: 5vh;
+    }
+    nav li{
+        background-color: rgba(0, 0, 0, 0.8);
+    }
 }
 /* Tablet portrait */
 @media (min-width:768px){
     .Container{
         max-width:720px;
     }
-    /********** Cabeçalho **********/
-    .MenuFlex {
-        height: 70px;
-        margin: auto;
-        align-items:center;
-        justify-content: space-between;
-    }
-    body{
-        font-size: 200%;
+    .MenuFlex a{
+        font-size: 4em;
     }
     #logo img{
         width:55px;
         height:45px;
         margin: 10px 0px 0px 10px;
     }
+    
+    .Container{
+        font-size: 30px;
+    }
+    #social img{
+        height: 50px;
+        width: 50px;
+    }
+    #social a{
+        padding: 15px;
+    }
+    
+    /********** Cabeçalho **********/
+    .MenuFlex {
+        height: 70px;
+        display: flex;
+        margin: auto;
+        align-items:center;
+        align-content: flex-start;
+        justify-content: space-between;
+        position: relative;
+        top: 0px;
+    }
+    body{
+        font-size: 5px;
+    }
+    #logo img{
+        width:55px;
+        height:45px;
+        margin: 10px 0px 0px 10px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
     label {
         font-size: 1.5em;
         position: fixed;
-        top: 5px;
+        top: 17px;
         right: 10px;
     }
     .Card{
@@ -328,12 +395,17 @@ footer a{
         padding: 10px 30px 25px 30px;
         
     }
-
+    .MenuFlex a{
+        font-size: 8em;
+    }
 }
 /* Tablet landscape */
 @media (min-width:992px){
     .Container{
         max-width:960px;
+    }
+    body{
+        font-size: 5px;
     }
     /********** Cabeçalho **********/
     .MenuFlex {
@@ -344,18 +416,25 @@ footer a{
         
     }
     .MenuFlex a{
-        font-size: 4em;
+        font-size: 5em;
     }
     #logo img{
         width:55px;
         height:45px;
-        margin: 00px 0px 0px 10px;
+        margin: 10px 0px 0px 10px;
     }
     label {
         font-size: 1.5em;
         position: fixed;
-        top: 5px;
+        top: 17px;
         right: 10px;
+    }
+    .Container{
+        font-size: 30px;
+    }
+    #social img{
+        height: 50px;
+        width: 50px;
     }
 }
 /* PCs, notebooks HD ou TV */
@@ -392,12 +471,34 @@ footer a{
     nav ul li{
         border: 0;
         float: left;
+        background-color: rgba(0, 0, 0, 0);
     }
     nav ul li a{
-        color: var(--textoLayout)
+        color: var(--textoBranco)
     }
     nav ul li a:hover{
         color: var(--vermelhoLayout);
+    }   
+    .Card{
+        width: 500px;
+        height: 550px;
+    }  
+    .Card h2, h3{
+        font-size: 1em;
+    }
+    .Card img{
+        height: 200px;
+        width: 250px;
+    }
+    .Card p{
+    font-size: 0.5em;
+    }
+    .Card h3{
+        margin-top: 100px;
+        font-size: 0.8em;
+    }
+    .Button {
+        font-size: 0.8em;
     }
 }
 /* PCs ou notebooks Full HD */

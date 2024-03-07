@@ -74,7 +74,14 @@ main h1{
 .Container{
     margin:0 auto;
     padding:50px 15px 50px 15px;
+<<<<<<< HEAD
     flex-direction:row;
+=======
+<<<<<<< HEAD
+    flex-direction:row;
+=======
+>>>>>>> 8e74e3ade0acc5d705082423d0f3a33fe8b6e6af
+>>>>>>> e3451f713f2cb92142c8a1943ad4f2f4c04973e2
 }
 #logo img{
     width:130px;
@@ -118,7 +125,15 @@ label {
 }
 .Card p {
     padding: 10px 30px 25px 30px;
+<<<<<<< HEAD
     text-align: center;
+=======
+<<<<<<< HEAD
+    text-align: center;
+=======
+    text-align: left;
+>>>>>>> 8e74e3ade0acc5d705082423d0f3a33fe8b6e6af
+>>>>>>> e3451f713f2cb92142c8a1943ad4f2f4c04973e2
     color: var(--textoCinza);
 }
 .Button{
@@ -145,6 +160,10 @@ footer p{
     color:var(--textoPreto);
 }
 #social{
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> e3451f713f2cb92142c8a1943ad4f2f4c04973e2
     display: flex;
     flex-direction: row;
     margin: 0px;
@@ -157,6 +176,15 @@ footer p{
     height: 30px;
     width: 30px;
 }
+<<<<<<< HEAD
+=======
+=======
+    margin-bottom:0px;   
+    display: flex;
+    flex-direction: row;
+}
+>>>>>>> 8e74e3ade0acc5d705082423d0f3a33fe8b6e6af
+>>>>>>> e3451f713f2cb92142c8a1943ad4f2f4c04973e2
 
 footer a{
     text-decoration:none;
@@ -347,9 +375,18 @@ footer div a img{
         height: 50px;
         width: 50px;
     }
+<<<<<<< HEAD
     #social a{
         padding: 15px;
     }
+=======
+<<<<<<< HEAD
+    #social a{
+        padding: 15px;
+    }
+=======
+>>>>>>> 8e74e3ade0acc5d705082423d0f3a33fe8b6e6af
+>>>>>>> e3451f713f2cb92142c8a1943ad4f2f4c04973e2
     
     /********** Cabeçalho **********/
     .MenuFlex {
@@ -478,6 +515,10 @@ footer div a img{
     }
     nav ul li a:hover{
         color: var(--vermelhoLayout);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> e3451f713f2cb92142c8a1943ad4f2f4c04973e2
     }   
     .Card{
         width: 500px;
@@ -485,6 +526,23 @@ footer div a img{
     }  
     .Card h2, h3{
         font-size: 1em;
+<<<<<<< HEAD
+    }
+    .Card img{
+        height: 200px;
+        width: 250px;
+    }
+    .Card p{
+    font-size: 0.5em;
+    }
+    .Card h3{
+        margin-top: 100px;
+        font-size: 0.8em;
+    }
+    .Button {
+        font-size: 0.8em;
+=======
+>>>>>>> e3451f713f2cb92142c8a1943ad4f2f4c04973e2
     }
     .Card img{
         height: 200px;
@@ -500,6 +558,9 @@ footer div a img{
     .Button {
         font-size: 0.8em;
     }
+=======
+    }     
+>>>>>>> 8e74e3ade0acc5d705082423d0f3a33fe8b6e6af
 }
 /* PCs ou notebooks Full HD */
 @media (min-width:1400px){

@@ -16,18 +16,20 @@ Lucas Santos da Silva
 ## Links utilizados
 
 
-[Google Trends]https://trends.google.com/trends/
+[Google Trends](https://trends.google.com.br/trends/)
 
-[Google Fonts]https://fonts.google.com/
+[Google Fonts](https://fonts.google.com)
 
-[Validator W3]https://validator.w3.org/
+[Validador W3C HTML](https://validator.w3.org/#validate_by_upload)
 
-[draw.io]https://app.diagrams.net/
+[Validador W3C CSS](https://jigsaw.w3.org/css-validator/#validate_by_upload)
 
-[Icon Finder]https://www.iconfinder.com/
+[Draw.io](https://app.diagrams.net)
 
-[Pixabay]https://pixabay.com/pt/
+[Iconfinder](https://www.iconfinder.com)
 
-[Image Compressor]https://imagecompressor.com/
+[Pixabay](https://pixabay.com/pt/)
 
-[Github Shield]https://shields.io
+[Optimizila](https://imagecompressor.com)
+
+[Unicode](https://unicode.org/charts/)

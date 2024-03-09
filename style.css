@@ -467,14 +467,17 @@ footer div a img{
         position: static;
         width:100%;
         transition: none;
+        
     }
     nav ul li{
         border: 0;
         float: left;
         background-color: rgba(0, 0, 0, 0);
+        font-size: 0.8em;
     }
     nav ul li a{
         color: var(--textoBranco)
+        
     }
     nav ul li a:hover{
         color: var(--vermelhoLayout);
@@ -507,15 +510,21 @@ footer div a img{
         max-width:1140px;   
     }
     .MenuFlex {
-        height: 130px;
+        height: 170px;
+        width:100%;
+        display:flex;
+        flex-direction: column;
         margin: auto;
-        align-items:center;
-        justify-content: space-between;
+        align-content:center;
+        
+        justify-content: center;
+
     }
     #logo img{
         width:130px;
         height:100px;
         margin: 10px 0px 0px 10px;
+        position: relative;
     }
     label {
         display: none;

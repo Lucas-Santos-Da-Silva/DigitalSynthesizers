@@ -29,11 +29,6 @@ header a{
     text-decoration:none;
     color:var(--textoBranco);
 }
-section{
-    display: flex; 
-    justify-content: center;
-}
-
 #titulo {
     display: flex;
     flex-direction: row;
@@ -79,7 +74,7 @@ main h1{
     font-weight: 700;
 }
 /* Centralização de conteúdo */
-.Container{
+.container{
     margin:0 auto;
     padding:50px 15px 50px 15px;
     flex-direction:row;
@@ -89,7 +84,7 @@ main h1{
     height:100px;
     margin: 10px 0px 0px 10px;
 }
-.MenuFlex{
+.menuFlex{
     flex-direction: row;
     display:flex;
     justify-content: space-between;
@@ -98,47 +93,58 @@ main h1{
 label {
     color:var(--textoBranco);
 }
-#s1,
-#s2,
-#s3,
-#s4 {
-    display: none;
+#menuButton1,
+#menuButton2,
+#menuButton3,
+#menuButton4,
+#menuButton5 {
+    padding-right: 5px;
+    display: inline;
+    color:var(--layoutCorSecundaria);
+    animation-name: introAnimation;
+    animation-duration: 2s;
 }
-.Flex{
+@keyframes introAnimation {
+    from {padding-right: 15px; opacity: 0%;}
+    to {padding-right: 5px; opacity: 100%;}
+}
+.flex{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    text-align: center;
+}
+.cardMenu{
+    height: 580px;
+    width: 100%;
     display:flex;
     justify-content:space-between;
     flex-direction:row;
 }
-.Card{
-
+.card{
     margin-top: 0px;
-    width: 338px;
-    height: 520px;
     background-color: var(--layoutCardFundo);
     border-radius: 15px;
-    /*
-    border: 1px solid var(--bordaLayout);
-    
-    */
+    border: 1px solid var(--textoCinza);
     align-items: center;
     text-align: center;
-    
+    margin: 10px;
 }
-.Card img{
+.card img{
     border-radius: 25px 25px 0px 0px;
 }
-.Card video{
+.card video{
     border-radius: 25px 25px 0px 0px;
 }
-.Card h3 {
+.card h3 {
     margin: 150px 30px 0px 30px;
 }
-.Card p {
+.card p {
     padding: 10px 30px 25px 30px;
     text-align: center;
     color: var(--textoCinza);
 }
-.Button{
+.button{
     text-decoration: none;
     background-color: var(--layoutCorSecundaria);
     color: var(--textoPreto);
@@ -157,6 +163,7 @@ footer{
     position: relative;
     bottom: 0px;
     width: 100%;
+    margin-top: 30px;
 }
 footer p{
     color:var(--textoPreto);
@@ -222,15 +229,15 @@ footer div a img{
         height: 85px;
         width: 85px;
     }
-    .Flex{
+    .flex{
         flex-direction:row-reverse;
     }
     /********** Cabeçalho **********/
-    .Container{
+    .container{
         max-width:350px;
     }
 
-    .MenuFlex {
+    .menuFlex {
         height: 70px;
         margin: auto;
         align-items:center;
@@ -278,7 +285,7 @@ footer div a img{
     #banner{
         align-content: center;
     }
-    .Card{
+    .card{
         background-color: var(--layoutCardFundo);
     }
     /* Rodapé */
@@ -296,14 +303,14 @@ footer div a img{
 }
 /* Smartphone landscape */
 @media (min-width:576px){
-    .Container{
+    .container{
         max-width:540px;
     }
-    .Flex{
+    .flex{
         justify-content:space-between;
         align-items:center;
     }
-    .Card{
+    .card{
         background-color: var(--layoutCardFundo);
     }
     #topo{
@@ -319,7 +326,7 @@ footer div a img{
         width: 85px;
     }
     /********** Cabeçalho **********/
-    .MenuFlex {
+    .menuFlex {
         height: 70px;
         margin: auto;
         align-items:center;
@@ -367,24 +374,8 @@ footer div a img{
     #social a{
         padding: 15px;
     }
-    /* Destacar link ativo do menu */
-    #s1,
-    #s2,
-    #s3,
-    #s4,
-    #s5 {
-        display: inline;
-        color:var(--selectedItem);
-        animation-name: introAnimation;
-        animation-duration: 2s;
-    }
-
-    @keyframes introAnimation {
-        from {padding-right: 15px; opacity: 0%;}
-        to {padding-right: 5px; opacity: 100%;}
-    }
     /********** Cabeçalho **********/
-    .MenuFlex {
+    .menuFlex {
         height: 70px;
         display: flex;
         margin: auto;
@@ -411,43 +402,44 @@ footer div a img{
         top: 17px;
         right: 10px;
     }
-    .Card{
+    .card{
         margin-top: 30px;
         width: 638px;
         height: 780px;
     }
-    .Card img{
+    .card img{
         height: 300px;
         width: 350px;
     }
-    .Card h3 {
+    .card h3 {
         margin: 150px 30px 0px 30px;
     }
-    .Card p {
+    .card p {
         padding: 10px 30px 25px 30px;
         
     }
-    .MenuFlex a{
+    .menuFlex a{
         font-size: 8em;
     }
 }
 /* Tablet landscape */
 @media (min-width:992px){
-    .Container{
+    .container{
         max-width:960px;
+        font-size: 30px;
     }
     body{
         font-size: 5px;
     }
     /********** Cabeçalho **********/
-    .MenuFlex {
+    .menuFlex {
         height: 70px;
         margin: auto;
         align-items:center;
         justify-content: space-between;
         
     }
-    .MenuFlex a{
+    .menuFlex a{
         font-size: 5em;
     }
     #logo img{
@@ -461,34 +453,22 @@ footer div a img{
         top: 17px;
         right: 10px;
     }
-    .Container{
-        font-size: 30px;
-    }
     #social img{
         height: 50px;
         width: 50px;
     }
-    /* Destacar link ativo do menu */
-    #s1,
-    #s2,
-    #s3,
-    #s4,
-    #s5 {
-        display: inline;
-        color:var(--layoutCorSecundaria);
-    }
 }
 /* PCs, notebooks HD ou TV */
 @media (min-width:1200px){
-    .Container{
+    .container{
         max-width:1000px;
     }
-    .Flex{
+    .flex{
         flex-direction:row-reverse;
         justify-content:space-between;
         align-items:center;
     }
-    .MenuFlex {
+    .menuFlex {
         height: 130px;
         margin: auto;
         align-items:center;
@@ -522,44 +502,41 @@ footer div a img{
     }
     nav ul li a:hover{
         color: var(--vermelhoLayout);
-    }   
-    .Card{
-        width: 500px;
-        height: 550px;
     }  
-    .Card h2, h3{
-        font-size: 1em;
+    .cardContainer{
+        font-size: 0.9em;
     }
-    .Card img{
-        height: 200px;
+    .cardMenu{
+        height: 353px;
+        margin-bottom: 25px;
+    } 
+    .card{
+        width: 345px;
+        height: 354px;
+    }  
+    .card h2, h3{
+        font-size: 0.85em;
+    }
+    .card img{
+        height: 177px;
         width: 250px;
     }
-    .Card p{
+    .card p{
     font-size: 0.5em;
     }
-    .Card h3{
-        margin-top: 100px;
-        font-size: 0.8em;
+    .card h3{
+        margin-top: 10px;
     }
-    .Button {
+    .button {
         font-size: 0.8em;
-    }
-    /* Destacar link ativo do menu */
-    #s1,
-    #s2,
-    #s3,
-    #s4,
-    #s5 {
-        display: inline;
-        color:var(--layoutCorSecundaria);
     }
 }
 /* PCs ou notebooks Full HD */
 @media (min-width:1400px){
-    .Container{
+    .container{
         max-width:1140px;   
     }
-    .MenuFlex {
+    .menuFlex {
         height: 170px;
         width:100%;
         display:flex;
@@ -578,15 +555,5 @@ footer div a img{
     }
     label {
         display: none;
-    }
-    /* Destacar link ativo do menu */
-    #s1,
-    #s2,
-    #s3,
-    #s4,
-    #s5 {
-        display: inline;
-        color:var(--layoutCorSecundaria);
-    }
-   
+    } 
 }

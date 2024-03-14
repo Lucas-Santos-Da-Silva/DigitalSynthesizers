@@ -50,7 +50,8 @@ main {
     justify-content: center;
     align-items: center;
     text-shadow: 0.2em 0.2em var(--layoutPreto);
-
+    animation-name: introAnimation;
+    animation-duration: 2s;
 }
 /*
 #banner{
@@ -113,6 +114,18 @@ label {
     justify-content:center;
     flex-direction:column;
     text-align: center;
+}
+.Desc{
+    margin: 10px 0px 0px 0px;
+    width: 100%;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    background: url(./img/background2.jpg);
+    height: 55vh;
+    background-size:cover;
+    background-position:center;
 }
 .cardMenu{
     height: 580px;

@@ -152,6 +152,10 @@ label {
     text-align: center;
     color: var(--textoCinza);
 }
+a{
+    color:var(--textoPreto);
+    text-decoration: none;
+}
 .button{
     text-decoration: none;
     background-color: var(--layoutCorSecundaria);
@@ -862,28 +866,28 @@ footer div a img{
     }
     .cardMenu{
         height: 353px;
-        width: 625px;
+        width: 100%;
         margin: 50px 0px;
         display: flex;
         flex-direction: row;
         position: relative;
-        left:6.5%;
+        left:-25%;
     } 
     .card{
         margin: 0px;
-        width: 180px;
+        width: 380px;
         height: 300px;
         align-items: center;
         position: relative;
         left:0%;
     }  
     .card h3{
-        font-size: 1em;
+        font-size: 1.5em;
         margin-bottom: 20px;
     }
     .card img{
-        height: 125px;
-        width: 180px;
+        height: 150px;
+        width: 250px;
         border-radius: 15px 15px 0px 0px;
     }
     .card p{

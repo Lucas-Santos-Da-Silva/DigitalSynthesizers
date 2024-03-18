@@ -77,8 +77,6 @@ main div{
     margin:0 auto;
     padding:15px 15px 15px 15px;
     flex-direction:row;
-    position: relative;
-    right:3.25%;
 }
 .containerFooter{
     display:flex;
@@ -112,7 +110,7 @@ label {
 #menuButton5 {
     padding-right: 5px;
     display: inline;
-    color:var(--layoutCorSecundaria);
+    color:var(--layoutEnfase);
     animation-name: introAnimation;
     animation-duration: 2s;
 }
@@ -184,7 +182,7 @@ footer p{
     display: flex;
     flex-direction: row;
     margin: 0px;
-}
+}  
 #social a {
     padding-right: 10px;
     margin:0px;
@@ -303,7 +301,7 @@ footer div a img{
         position: relative;
         left:3.125%
     }  
-    .card h3{
+    .card h2{
         font-size: 2em;
     }
     .card img{
@@ -412,7 +410,7 @@ footer div a img{
         width: 180px;
         height: 300px;
     }  
-    .card h3{
+    .card h2{
         font-size: 1em;
         margin-bottom: 20px;
     }
@@ -525,7 +523,7 @@ footer div a img{
         position: relative;
         left:0%;
     }  
-    .card h3{
+    .card h2{
         font-size: 2em;
         margin-bottom: 20px;
     }
@@ -647,7 +645,7 @@ footer div a img{
         position: relative;
         left:0%;
     }  
-    .card h3{
+    .card h2{
         font-size: 1em;
         margin-bottom: 20px;
     }
@@ -722,7 +720,7 @@ footer div a img{
         border: 0;
         float: left;
         background-color: rgba(0, 0, 0, 0);
-        font-size: 0.8em;
+        font-size: 1em;
     }
     nav ul li a{
         color: var(--textoBranco);
@@ -733,17 +731,21 @@ footer div a img{
     }  
     .containerSection{
         padding: 15px 0px;
-        position: relative;
-        right: 0%;
+        margin-bottom: 100px;
     }
     .cardContainer{
         font-size: 0.9em;
         margin-top:50px;
-        width: 700px;
+        width: 1050px;
         height: 300px;
     }
-    .cardContainer h2{
-        font-size: 1.8em;
+    .cardContainer h3{
+        font-size: 2.4em;
+        font-weight: 700;
+    }
+    .cardContainer p{
+        font-size: 1.5em;
+        margin-top: 30px;
     }
     main h1{
         font-size: 1.5em;
@@ -753,38 +755,33 @@ footer div a img{
     }
     .cardMenu{
         height: 353px;
-        width: 625px;
-        margin: 50px 0px;
+        width: 1050px;
+        margin: 10px -70px;
         display: flex;
         flex-direction: row;
-        position: relative;
-        left:6.5%;
     } 
     .card{
-        margin: 0px;
-        width: 180px;
-        height: 300px;
+        width: 350px;
+        height: 350px;
         align-items: center;
-        position: relative;
-        left:0%;
     }  
-    .card h3{
-        font-size: 1em;
+    .card h4{
+        font-size: 1.5em;
         margin-bottom: 20px;
     }
     .card img{
-        height: 125px;
-        width: 180px;
+        height: 185px;
+        width: 280px;
         border-radius: 15px 15px 0px 0px;
     }
     .card p{
         margin: 10px;
         padding: 0px;
-        font-size: 0.9em;
+        font-size: 1em;
 
     }
-    .card h3{
-        margin-top: 10px;
+    .card h4{
+        margin-top: 20px;
     }
     #social img{
         height: 30px;
@@ -835,7 +832,7 @@ footer div a img{
         border: 0;
         float: left;
         background-color: rgba(0, 0, 0, 0);
-        font-size: 0.8em;
+        font-size: 1em;
     }
     nav ul li a{
         color: var(--textoBranco);
@@ -846,17 +843,21 @@ footer div a img{
     }  
     .containerSection{
         padding: 15px 0px;
-        position: relative;
-        right: 0%;
+        margin-bottom: 100px;
     }
     .cardContainer{
         font-size: 0.9em;
         margin-top:50px;
-        width: 700px;
+        width: 1050px;
         height: 300px;
     }
-    .cardContainer h2{
-        font-size: 1.8em;
+    .cardContainer h3{
+        font-size: 2.4em;
+        font-weight: 700;
+    }
+    .cardContainer p{
+        font-size: 1.5em;
+        margin-top: 30px;
     }
     main h1{
         font-size: 1.5em;
@@ -866,38 +867,34 @@ footer div a img{
     }
     .cardMenu{
         height: 353px;
-        width: 100%;
-        margin: 50px 0px;
+        width: 1050px;
+        margin: 10px 0px;
         display: flex;
         flex-direction: row;
-        position: relative;
-        left:-25%;
     } 
     .card{
         margin: 0px;
-        width: 380px;
-        height: 300px;
+        width: 350px;
+        height: 350px;
         align-items: center;
-        position: relative;
-        left:0%;
     }  
-    .card h3{
+    .card h4{
         font-size: 1.5em;
         margin-bottom: 20px;
     }
     .card img{
-        height: 150px;
-        width: 250px;
+        height: 185px;
+        width: 280px;
         border-radius: 15px 15px 0px 0px;
     }
     .card p{
         margin: 10px;
         padding: 0px;
-        font-size: 0.9em;
+        font-size: 1em;
 
     }
-    .card h3{
-        margin-top: 10px;
+    .card h4{
+        margin-top: 20px;
     }
     #social img{
         height: 30px;

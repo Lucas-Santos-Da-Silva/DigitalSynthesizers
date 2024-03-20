@@ -147,6 +147,15 @@ label {
     text-align: center;
     color: var(--textoCinza);
 }
+.links{
+    margin-bottom: 50px;
+}
+.LinksLinksLinks{
+    text-align: center;
+}
+.linksTexto{
+    text-align: center;
+}
 .LinksLinksLinks a{
     background-color: var(--layoutCardFundo);
     border-radius: 15px;

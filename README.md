@@ -6,7 +6,7 @@
 # DigitalSynthesizers
 Este repositório hospeda o projeto do site DigitalSynthesizers
 ## Acessar Site
-![QrCode]()
+![QrCode](https://github.com/Lucas-Santos-Da-Silva/DigitalSynthesizers/blob/main/doc/qrcode_lucas-santos-da-silva.github.io.png)
 
 ## Autor
 Lucas Santos da Silva

@@ -126,7 +126,6 @@ label {
     flex-direction:row;
 }
 .card{
-    margin-top: 0px;
     background-color: var(--layoutCardFundo);
     border-radius: 15px;
     border: 1px solid var(--textoCinza);
@@ -144,6 +143,33 @@ label {
     margin: 150px 30px 0px 30px;
 }
 .card p {
+    padding: 10px 30px 25px 30px;
+    text-align: center;
+    color: var(--textoCinza);
+}
+.LinksLinksLinks a{
+    background-color: var(--layoutCardFundo);
+    border-radius: 15px;
+    border: 1px solid var(--textoCinza);
+}
+.construcao{
+    background-color: var(--layoutCardFundo);
+    border-radius: 15px;
+    border: 1px solid var(--textoCinza);
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+}
+.construcao img{
+    border-radius: 25px 25px 0px 0px;
+}
+.construcao video{
+    border-radius: 25px 25px 0px 0px;
+}
+.construcao h3 {
+    margin: 150px 30px 0px 30px;
+}
+.construcao p {
     padding: 10px 30px 25px 30px;
     text-align: center;
     color: var(--textoCinza);
@@ -253,9 +279,6 @@ footer div a img{
         height:100px;
         margin: 10px 0px 0px 10px;
     }
-    label {
-        display: none;
-    }
     main h1{
         font-size: 2em;
     }
@@ -267,26 +290,39 @@ footer div a img{
         height: 300px;
         margin-bottom: 50px;
     }
-    nav ul{
+    #check {
+        display: none;
+    }
+      
+    label {
+        font-size: 3em;
+        position: fixed;
+        top: 5px;
+        right: 15px;
+        color: rgba(0, 0, 0, 0.5);
+    }
+    nav ul {
         list-style: none;
-        height: auto;
-        position: static;
-        width:100%;
-        transition: none;
-        margin-bottom: 45px;
+        background-color: rgba(31, 31, 31, 0.70);
+        height: 100vh;
+        position: fixed;
+        top: 80px;
+        right: -65%;
+        width: 65%;
+        transition: all 0.5s;
+        z-index: 1;
+    }   
+    #check:checked~ul {
+        right: 0;
     }
-    nav ul li{
-        border: 0;
-        float: left;
-        background-color: rgba(0, 0, 0, 0);
-        font-size: 0.8em;
+    nav ul li {
+        padding: 17px 20px;
+        border-bottom: 1px solid #a9a9a9;
+        text-align: right;
     }
-    nav ul li a{
-        color: var(--textoBranco);
-        padding-right: 15px;
-    }
-    nav ul li a:hover{
-        color: var(--vermelhoLayout);
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
     }
     .cardText h3{
         margin: 25px 0px 10px 0px;
@@ -316,16 +352,17 @@ footer div a img{
         justify-content: center;
     } 
     .card{
-        margin: 0px 30px 25px 0px;
+        margin: 0px 0px 25px 0px;
         width: 350px;
         height: 375px;
         align-items: center;
         position: relative;
         left:0%;
+
     }  
     .card h4{
         font-size: 1.5em;
-        margin-bottom: 20px;
+        margin: 20px 0px;
     }
     .card img{
         height: 200px;
@@ -336,10 +373,6 @@ footer div a img{
         margin: 10px;
         padding: 0px;
         font-size: 1em;
-
-    }
-    .card h4{
-        margin-top: 20px;
     }
     #social img{
         height: 30px;
@@ -351,6 +384,65 @@ footer div a img{
         height:14px;
         position: relative;
         bottom: -25%;
+    }
+    .construcao{
+        margin: 0px 0px 25px 0px;
+        width: 350px;
+        height: 375px;
+        align-items: center;
+        position: relative;
+        left:0%;
+
+    }  
+    .construcao h3{
+        font-size: 1.5em;
+        margin: 20px 0px;
+    }
+    .construcao img{
+        height: 200px;
+        width: 250px;
+        border-radius: 15px 15px 0px 0px;
+    }
+    .construcao p{
+        margin: 10px;
+        padding: 0px;
+        font-size: 1em;
+    }
+    .sobreContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #sobreImg{
+        width: 300px;
+    }
+    #sobreTextoImagem{
+        width: 370px;
+    }
+    #sobreTextoImagem img{
+        height: 100px;
+        width: 370px;
+    }
+    #sobreImg img{
+        border-radius: 50%;
+        height: 300px;
+        width: 300px;
+    }
+    #sobreTexto{
+        width: 370px;
+        height: 313px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #sobreTextoTexto{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    #sobreTexto h3{
+        font-size: 2em;
+        margin-bottom: 15px;
     }
     .button {
         font-size: 0.8em;
@@ -464,6 +556,15 @@ footer div a img{
     }
     .card h3{
         margin-top: 10px;
+    }
+    .links{
+        height: 100px;
+    }
+    .linksTexto{
+        margin-bottom: 20px;
+    }
+    .linksLinks a{
+        font-size: 0.85em;
     }
     #social img{
         height: 30px;

@@ -256,7 +256,11 @@ footer div a img{
     label {
         display: none;
     }
+    main h1{
+        font-size: 2em;
+    }
     main h2{
+        margin-top: 25px;
         font-size: 1em;
     }
     main{
@@ -283,9 +287,14 @@ footer div a img{
     }
     nav ul li a:hover{
         color: var(--vermelhoLayout);
+    }
+    .cardText h3{
+        margin: 25px 0px 10px 0px;
+        font-size: 1.5em;
     }  
     .cardText p{
-        margin: 25px 0px 15px 0px;
+        margin: 0px 0px 50px 0px;
+        font-size: 1.2em ;
     }
     .containerSection{
         padding: 15px 0px;
@@ -297,8 +306,8 @@ footer div a img{
         text-align: center;
     }
     .cardMenu{
-        height: 975px;
-        width: 150px;
+        height: 1175px;
+        width: 350px;
         margin-bottom: 50px;
         position: relative;
         left: 0%;
@@ -308,29 +317,29 @@ footer div a img{
     } 
     .card{
         margin: 0px 30px 25px 0px;
-        width: 150px;
-        height: 300px;
+        width: 350px;
+        height: 375px;
         align-items: center;
         position: relative;
         left:0%;
     }  
-    .card h2{
-        font-size: 1em;
+    .card h4{
+        font-size: 1.5em;
         margin-bottom: 20px;
     }
     .card img{
-        height: 125px;
-        width: 150px;
+        height: 200px;
+        width: 350px;
         border-radius: 15px 15px 0px 0px;
     }
     .card p{
         margin: 10px;
         padding: 0px;
-        font-size: 0.8em;
+        font-size: 1em;
 
     }
-    .card h3{
-        margin-top: 10px;
+    .card h4{
+        margin-top: 20px;
     }
     #social img{
         height: 30px;
@@ -432,7 +441,7 @@ footer div a img{
     } 
     .card{
         margin: 25px 30px 0px 0px;
-        width: 150px;
+        width: 350px;
         height: 300px;
         align-items: center;
         position: relative;
@@ -444,7 +453,7 @@ footer div a img{
     }
     .card img{
         height: 125px;
-        width: 150px;
+        width: 350px;
         border-radius: 15px 15px 0px 0px;
     }
     .card p{
@@ -459,6 +468,42 @@ footer div a img{
     #social img{
         height: 30px;
         width:30px;
+    }
+    .sobreContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #sobreImg{
+        width: 300px;
+    }
+    #SobreTextoImagem{
+        width: 600px;
+    }
+    #sobreTextoImagem img{
+        height: 100px;
+        width: 600px;
+    }
+    #sobreImg img{
+        border-radius: 50%;
+        height: 300px;
+        width: 300px;
+    }
+    #sobreTexto{
+        width: 660px;
+        height: 313px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #sobreTextoTexto{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    #sobreTexto h3{
+        font-size: 2em;
+        margin-bottom: 15px;
     }
     .button {
         font-size: 0.8em;
@@ -573,6 +618,39 @@ footer div a img{
     }
     .button {
         font-size: 0.8em;
+    }
+    .sobreContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #sobreImg{
+        width: 400px;
+    }
+    #sobreTextoImagem img{
+        height: 112px;
+        width: 760px;
+    }
+    #sobreImg img{
+        border-radius: 50%;
+        height: 400px;
+        width: 400px;
+    }
+    #sobreTexto{
+        width: 760px;
+        height: 313px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #sobreTextoTexto{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    #sobreTexto h3{
+        font-size: 2em;
+        margin-bottom: 15px;
     }
     #copyright{
         padding-right: 280px;
@@ -690,6 +768,39 @@ footer div a img{
     }
     .button {
         font-size: 0.8em;
+    }
+    .sobreContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #sobreImg{
+        width: 400px;
+    }
+    #sobreTextoImagem img{
+        height: 112px;
+        width: 1000px;
+    }
+    #sobreImg img{
+        border-radius: 50%;
+        height: 400px;
+        width: 400px;
+    }
+    #sobreTexto{
+        width: 1000px;
+        height: 313px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #sobreTextoTexto{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    #sobreTexto h3{
+        font-size: 2em;
+        margin-bottom: 15px;
     }
     #copyright{
         padding-right: 280px;
@@ -809,6 +920,39 @@ footer div a img{
     .button {
         font-size: 0.8em;
     }
+    .sobreContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #sobreImg{
+        width: 400px;
+    }
+    #sobreTextoImagem img{
+        height: 112px;
+        width: 1000px;
+    }
+    #sobreImg img{
+        border-radius: 50%;
+        height: 400px;
+        width: 400px;
+    }
+    #sobreTexto{
+        width: 1000px;
+        height: 313px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #sobreTextoTexto{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    #sobreTexto h3{
+        font-size: 2em;
+        margin-bottom: 15px;
+    }
     #copyright{
         padding-right: 280px;
     }
@@ -918,6 +1062,39 @@ footer div a img{
     }
     .button {
         font-size: 0.8em;
+    }
+    .sobreContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #sobreImg{
+        width: 400px;
+    }
+    #sobreTextoImagem img{
+        height: 112px;
+        width: 1000px;
+    }
+    #sobreImg img{
+        border-radius: 50%;
+        height: 400px;
+        width: 400px;
+    }
+    #sobreTexto{
+        width: 1000px;
+        height: 313px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #sobreTextoTexto{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    #sobreTexto h3{
+        font-size: 2em;
+        margin-bottom: 15px;
     }
     #copyright{
         padding-right: 280px;

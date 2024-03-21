@@ -129,9 +129,13 @@ label {
     background-color: var(--layoutCardFundo);
     border-radius: 15px;
     border: 1px solid var(--textoCinza);
-    align-items: center;
     text-align: center;
     margin: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
 }
 .card img{
     border-radius: 25px 25px 0px 0px;
@@ -993,7 +997,7 @@ footer div a img{
         font-size: 1.5em;
     }
     .cardMenu{
-        height: 353px;
+        height: 450px;
         width: 1050px;
         margin: 15px 0px;
         position: relative;
@@ -1002,7 +1006,7 @@ footer div a img{
     .card{
         margin: 0px 15px;
         width: 300px;
-        height: 375px;
+        height: 450px;
         align-items: center;
     }  
     .card h4{
@@ -1022,6 +1026,19 @@ footer div a img{
     }
     .card h4{
         margin-top: 20px;
+    }
+    .cardButton p{
+        color: var(--textoPreto);
+    }
+    .cardButton{
+        text-decoration: none;
+        background-color: var(--layoutCorSecundaria);
+        border: 1px solid var(--layoutPreto);
+        border-radius: 10px;
+        height: 55px;
+        width: 250px;
+        font-size: 1.5em;
+        font-weight: 700;   
     }
     #social img{
         height: 30px;
@@ -1136,17 +1153,16 @@ footer div a img{
         font-size: 1.5em;
     }
     .cardMenu{
-        height: 353px;
+        height: 450px;
         width: 1050px;
-        margin: 50px 0px;
+        margin: 12.5px 0px;
         position: relative;
         left: 0%;
     } 
     .card{
         margin: 0px 12.5px;
         width: 350px;
-        height: 400px;
-        align-items: center;
+        height: 450px;
     }  
     .card h4{
         font-size: 1.5em;
@@ -1165,6 +1181,19 @@ footer div a img{
     }
     .card h4{
         margin-top: 20px;
+    }
+    .cardButton p{
+        color: var(--textoPreto);
+    }
+    .cardButton{
+        text-decoration: none;
+        background-color: var(--layoutCorSecundaria);
+        border: 1px solid var(--layoutPreto);
+        border-radius: 10px;
+        height: 55px;
+        width: 250px;
+        font-size: 1.5em;
+        font-weight: 700;   
     }
     #social img{
         height: 30px;

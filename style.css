@@ -134,8 +134,7 @@ label {
     align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: space-between;
+    justify-content: space-between;
 }
 .card img{
     border-radius: 25px 25px 0px 0px;
@@ -202,6 +201,12 @@ a{
     border-radius: 10px;
     font-size: 1.2em;
     font-weight: 700;
+}
+.cardButton{
+    display :flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
 }
 footer{
     background-color:var(--layoutPreto);
@@ -388,13 +393,12 @@ footer div a img{
         font-size: 1em;
     }
     #social img{
-        height: 30px;
-        width:30px;
+        height: 35px;
+        width: 35px;
     }
     #copyright p{
-        font-size: 10px;
+        font-size: 0.9em;
         padding-right: 50px;
-        height:14px;
         position: relative;
         bottom: -25%;
     }
@@ -459,6 +463,19 @@ footer div a img{
     }
     .button {
         font-size: 0.8em;
+    }
+    .cardButton{
+        text-decoration: none;
+        background-color: var(--layoutCorSecundaria);
+        border: 1px solid var(--layoutPreto);
+        border-radius: 10px;
+        height: 45px;
+        width: 250px;
+        font-size: 1.4em;
+        font-weight: 700;   
+    }
+    .cardButton p{
+        margin: 0px;
     }
     #topo img{
         position: fixed;
@@ -580,8 +597,8 @@ footer div a img{
         font-size: 0.85em;
     }
     #social img{
-        height: 30px;
-        width:30px;
+        height: 35px;
+        width: 35px;
     }
     .sobreContainer{
         display: flex;
@@ -621,6 +638,19 @@ footer div a img{
     }
     .button {
         font-size: 0.8em;
+    }
+    .cardButton{
+        text-decoration: none;
+        background-color: var(--layoutCorSecundaria);
+        border: 1px solid var(--layoutPreto);
+        border-radius: 10px;
+        height: 55px;
+        width: 250px;
+        font-size: 1.5em;
+        font-weight: 700;   
+    }
+    .cardButton p{
+        margin: 0px;
     }
     #copyright{
         padding-right: 280px;
@@ -727,11 +757,24 @@ footer div a img{
         margin-top: 10px;
     }
     #social img{
-        height: 30px;
-        width:30px;
+        height: 35px;
+        width: 35px;
     }
     .button {
         font-size: 0.8em;
+    }
+    .cardButton{
+        text-decoration: none;
+        background-color: var(--layoutCorSecundaria);
+        border: 1px solid var(--layoutPreto);
+        border-radius: 10px;
+        height: 55px;
+        width: 250px;
+        font-size: 1.5em;
+        font-weight: 700;   
+    }
+    .cardButton p{
+        margin: 0px;
     }
     .sobreContainer{
         display: flex;
@@ -877,11 +920,24 @@ footer div a img{
         margin-top: 10px;
     }
     #social img{
-        height: 30px;
-        width:30px;
+        height: 35px;
+        width: 35px;
     }
     .button {
         font-size: 0.8em;
+    }
+    .cardButton{
+        text-decoration: none;
+        background-color: var(--layoutCorSecundaria);
+        border: 1px solid var(--layoutPreto);
+        border-radius: 10px;
+        height: 55px;
+        width: 250px;
+        font-size: 1.5em;
+        font-weight: 700;   
+    }
+    .cardButton p{
+        margin: 0px;
     }
     .sobreContainer{
         display: flex;
@@ -1040,12 +1096,25 @@ footer div a img{
         font-size: 1.5em;
         font-weight: 700;   
     }
+    .cardButton p{
+        margin: 0px;
+    }
     #social img{
-        height: 30px;
-        width:30px;
+        height: 35px;
+        width: 35px;
     }
     .button {
         font-size: 0.8em;
+    }
+    .cardButton{
+        text-decoration: none;
+        background-color: var(--layoutCorSecundaria);
+        border: 1px solid var(--layoutPreto);
+        border-radius: 10px;
+        height: 55px;
+        width: 250px;
+        font-size: 1.5em;
+        font-weight: 700;   
     }
     .sobreContainer{
         display: flex;
@@ -1195,9 +1264,12 @@ footer div a img{
         font-size: 1.5em;
         font-weight: 700;   
     }
+    .cardButton p{
+        margin: 0px;
+    }
     #social img{
-        height: 30px;
-        width:30px;
+        height: 35px;
+        width: 35px;
     }
     .button {
         font-size: 0.8em;

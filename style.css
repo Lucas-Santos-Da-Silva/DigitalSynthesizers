@@ -78,13 +78,12 @@ main div{
 }
 .containerFooter{
     display:flex;
-    justify-content:center;
+    justify-content:space-around;
     flex-direction:column;
     text-align: center;
     margin:0 auto;
     padding:10px 0px;
-    flex-direction:row;
-    position: relative;
+    flex-direction:row-reverse;
 }
 #logo img{
     width:130px;
@@ -151,18 +150,37 @@ label {
     color: var(--textoCinza);
 }
 .links{
-    margin-bottom: 50px;
-}
-.LinksLinksLinks{
-    text-align: center;
-}
-.linksTexto{
-    text-align: center;
-}
-.LinksLinksLinks a{
     background-color: var(--layoutCardFundo);
     border-radius: 15px;
     border: 1px solid var(--textoCinza);
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 50vh;
+    padding: 10px 10px 50px 10px;
+}
+.links a{
+    font-size: 1.7em;
+}
+.links p{
+    font-size: 1em;
+}
+.linksMenu{
+    display: flex;
+    flex-direction: column;
+    width: 50vh;
+    margin-top: 50px;
+}
+.sectionLinks{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    text-align: center;
+    align-items: center;
+    margin:0 auto;
+}
+.sectionLinks h3{
+    font-size: 3em;
 }
 .construcao{
     background-color: var(--layoutCardFundo);
@@ -242,7 +260,7 @@ footer a{
 #topo img{
     height: 50px;
     width: 50px;
-    opacity: 50%;
+    opacity: 30%;
     position: fixed;
     right:10px;
     bottom: 10px;
@@ -293,8 +311,8 @@ footer div a img{
         justify-content: space-between;
     }
     #logo img{
-        width:130px;
-        height:100px;
+        width:190px;
+        height:150px;
         margin: 10px 0px 0px 10px;
     }
     main h1{
@@ -312,12 +330,16 @@ footer div a img{
         display: none;
     }
       
-    label {
+    label{
         font-size: 3em;
         position: fixed;
         top: 5px;
         right: 15px;
-        color: rgba(0, 0, 0, 0.5);
+        color: rgba(255, 255, 255, 0.5);
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.2);
+        padding: 5px;
+        border-radius: 25%;
     }
     nav ul {
         list-style: none;
@@ -347,7 +369,7 @@ footer div a img{
         font-size: 1.5em;
     }  
     .cardText p{
-        margin: 0px 0px 50px 0px;
+        margin: 0px 0px 0px 0px;
         font-size: 1.2em ;
     }
     .containerSection{
@@ -360,9 +382,9 @@ footer div a img{
         text-align: center;
     }
     .cardMenu{
-        height: 1175px;
+        height: 660px;
         width: 350px;
-        margin-bottom: 50px;
+        margin: 220px 0px 200px 0px;
         position: relative;
         left: 0%;
         display: flex;
@@ -372,15 +394,15 @@ footer div a img{
     .card{
         margin: 0px 0px 25px 0px;
         width: 350px;
-        height: 375px;
+        height: 320px;
         align-items: center;
         position: relative;
         left:0%;
 
     }  
     .card h4{
-        font-size: 1.5em;
-        margin: 20px 0px;
+        font-size: 1em;
+        margin: 0px 0px;
     }
     .card img{
         height: 200px;
@@ -390,7 +412,20 @@ footer div a img{
     .card p{
         margin: 10px;
         padding: 0px;
-        font-size: 1em;
+        font-size: 0.8em;
+    }
+    .cardButton{
+        text-decoration: none;
+        background-color: var(--layoutCorSecundaria);
+        border: 1px solid var(--layoutPreto);
+        border-radius: 10px;
+        height: 32px;
+        width: 250px;
+        font-size: 1.2em;
+        font-weight: 700;   
+    }
+    .cardButton p{
+        margin: 0px;
     }
     #social img{
         height: 35px;
@@ -464,19 +499,6 @@ footer div a img{
     .button {
         font-size: 0.8em;
     }
-    .cardButton{
-        text-decoration: none;
-        background-color: var(--layoutCorSecundaria);
-        border: 1px solid var(--layoutPreto);
-        border-radius: 10px;
-        height: 45px;
-        width: 250px;
-        font-size: 1.4em;
-        font-weight: 700;   
-    }
-    .cardButton p{
-        margin: 0px;
-    }
     #topo img{
         position: fixed;
         right:10px;
@@ -526,6 +548,7 @@ footer div a img{
     nav ul li a{
         color: var(--textoBranco);
         padding-right: 15px;
+        
     }
     nav ul li a:hover{
         color: var(--vermelhoLayout);
@@ -534,17 +557,22 @@ footer div a img{
         margin-bottom: 50px;
     } 
     main h1{
-        font-size: 2em;
+        font-size: 2.4em;
     }
     main h2{
-        font-size: 0.65em;
+        font-size: 1.5em;
+    }
+    .cardText h3{
+        font-size: 1.5em;
+        margin: 0px;
     }
     .cardText p{
+        font-size: 1.3em;
         margin: 0px;
     }
     .containerSection{
-        padding: 15px 0px;
-        margin-bottom: 50px;
+        padding: 10px 0px;
+        margin-bottom: 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -552,9 +580,9 @@ footer div a img{
         text-align: center;
     }
     .cardMenu{
-        height: 300px;
-        width: 530px;
-        margin: 10px 0px;
+        height: 350px;
+        width: 630px;
+        margin: 0px;
         position: relative;
         left: 0%;
         display: flex;
@@ -562,8 +590,8 @@ footer div a img{
         justify-content: center;
     } 
     .card{
-        margin: 25px 30px 0px 0px;
-        width: 350px;
+        margin: 25px 5px 0px 0px;
+        width: 210px;
         height: 300px;
         align-items: center;
         position: relative;
@@ -575,17 +603,31 @@ footer div a img{
     }
     .card img{
         height: 125px;
-        width: 350px;
+        width: 210px;
         border-radius: 15px 15px 0px 0px;
     }
     .card p{
         margin: 10px;
         padding: 0px;
-        font-size: 0.8em;
-
+        font-size: 0.7em;
     }
-    .card h3{
-        margin-top: 10px;
+    .card h4{
+        margin: 0px;
+        padding: 0px;
+        font-size: 1.2em;
+    }
+    .cardButton{
+        text-decoration: none;
+        background-color: var(--layoutCorSecundaria);
+        border: 1px solid var(--layoutPreto);
+        border-radius: 10px;
+        height: 26px;
+        width: 200px;
+        font-size: 1em;
+        font-weight: 700;   
+    }
+    .cardButton p{
+        margin: 0px;
     }
     .links{
         height: 100px;
@@ -639,21 +681,8 @@ footer div a img{
     .button {
         font-size: 0.8em;
     }
-    .cardButton{
-        text-decoration: none;
-        background-color: var(--layoutCorSecundaria);
-        border: 1px solid var(--layoutPreto);
-        border-radius: 10px;
-        height: 55px;
-        width: 250px;
-        font-size: 1.5em;
-        font-weight: 700;   
-    }
-    .cardButton p{
-        margin: 0px;
-    }
     #copyright{
-        padding-right: 280px;
+        padding-right: 0px;
     }
 }
 /* Tablet portrait */
@@ -723,7 +752,7 @@ footer div a img{
     }
     .cardMenu{
         height: 353px;
-        width: 615px;
+        width: 760px;
         margin: 10px 0px;
         position: relative;
         left: 0%;
@@ -731,8 +760,8 @@ footer div a img{
         justify-content: center;
     } 
     .card{
-        margin: 25px 30px 0px 0px;
-        width: 180px;
+        margin: 25px 10px 0px 0px;
+        width: 223px;
         height: 300px;
         align-items: center;
         position: relative;
@@ -744,7 +773,7 @@ footer div a img{
     }
     .card img{
         height: 125px;
-        width: 180px;
+        width: 223px;
         border-radius: 15px 15px 0px 0px;
     }
     .card p{
@@ -768,8 +797,8 @@ footer div a img{
         background-color: var(--layoutCorSecundaria);
         border: 1px solid var(--layoutPreto);
         border-radius: 10px;
-        height: 55px;
-        width: 250px;
+        height: 36px;
+        width: 215px;
         font-size: 1.5em;
         font-weight: 700;   
     }
@@ -877,7 +906,7 @@ footer div a img{
     }
     .containerSection{
         padding: 15px 0px;
-        margin-bottom: 0px;
+        margin-bottom: 50px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -886,7 +915,7 @@ footer div a img{
     }
     .cardMenu{
         height: 353px;
-        width: 1050px;
+        width: 1020px;
         margin: 10px 0px;
         position: relative;
         left: 0%;
@@ -894,9 +923,9 @@ footer div a img{
         justify-content: center;
     } 
     .card{
-        margin: 25px 30px 0px 0px;
-        width: 180px;
-        height: 300px;
+        margin: 5px 5px 0px 0px;
+        width: 306px;
+        height: 350px;
         align-items: center;
         position: relative;
         left:0%;
@@ -1039,6 +1068,7 @@ footer div a img{
         justify-content: center;
         align-items: center;
         text-align: center;
+        
     }
     main h1{
         font-size: 1.5em;
@@ -1051,27 +1081,28 @@ footer div a img{
     }
     .cardText p{
         font-size: 1.5em;
+        margin-bottom: 25px;
     }
     .cardMenu{
         height: 450px;
-        width: 1050px;
+        width: 1200px;
         margin: 15px 0px;
         position: relative;
         left: 0%;
     } 
     .card{
-        margin: 0px 15px;
-        width: 300px;
+        margin: 0px 5px;
+        width: 400px;
         height: 450px;
         align-items: center;
     }  
     .card h4{
         font-size: 1.5em;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
     }
     .card img{
-        height: 200px;
-        width: 300px;
+        height: 250px;
+        width: 400px;
         border-radius: 15px 15px 0px 0px;
     }
     .card p{
@@ -1148,9 +1179,6 @@ footer div a img{
     #sobreTexto h3{
         font-size: 2em;
         margin-bottom: 15px;
-    }
-    #copyright{
-        padding-right: 280px;
     }
 }
 /* PCs ou notebooks Full HD */
@@ -1202,7 +1230,7 @@ footer div a img{
     }  
     .containerSection{
         padding: 15px 0px;
-        margin-bottom: 100px;
+        margin-bottom: 25px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1222,15 +1250,15 @@ footer div a img{
         font-size: 1.5em;
     }
     .cardMenu{
-        height: 450px;
+        height: 500px;
         width: 1050px;
-        margin: 12.5px 0px;
+        margin: 0px;
         position: relative;
         left: 0%;
     } 
     .card{
-        margin: 0px 12.5px;
-        width: 350px;
+        margin: 0px 15px;
+        width: 340px;
         height: 450px;
     }  
     .card h4{
@@ -1239,7 +1267,7 @@ footer div a img{
     }
     .card img{
         height: 205px;
-        width: 350px;
+        width: 340px;
         border-radius: 15px 15px 0px 0px;
     }
     .card p{
@@ -1306,8 +1334,5 @@ footer div a img{
     #sobreTexto h3{
         font-size: 2em;
         margin-bottom: 15px;
-    }
-    #copyright{
-        padding-right: 280px;
     }
 }

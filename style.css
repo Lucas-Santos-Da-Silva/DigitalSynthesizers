@@ -182,6 +182,50 @@ label {
 .sectionLinks h3{
     font-size: 3em;
 }
+.articlesSection{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.articlesContainer{
+    background-color: var(--layoutCardFundo);
+    border-radius: 15px;
+    border: 1px solid var(--textoCinza);
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 50vh;
+    padding: 10px 10px 50px 10px;
+}
+.articlesLinksContainer{
+    margin-top: 40px;
+}
+.articlesLinks{
+    margin-bottom: 20px;
+    width: 50%;
+    position: relative;
+    right: 0px;
+}
+.articlesLinks a{
+    color: var(--layoutCorPrincipal);
+    text-decoration: underline;
+    text-align: center;
+    display: ;
+}
+.articlesLinksDivisor{
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: space-around;
+}
+.articlesLinksImages img{
+    width: 100%;
+}
+.articlesLinksImages{
+    width: 50%;
+    position: relative;
+    right: 0px;
+}
+
 .construcao{
     background-color: var(--layoutCardFundo);
     border-radius: 15px;
@@ -287,7 +331,9 @@ footer div a img{
     --layoutMenuFundo: #1f1e22;
     --textoCinza: #6b6c75;
 }
-
+.gallerySlider{
+    display: none;
+}
 
 
 

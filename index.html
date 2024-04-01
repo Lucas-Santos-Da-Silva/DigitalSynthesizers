@@ -6,20 +6,84 @@
     <!-- Importante para SEO-->
     <title>DigitalSynthesizers</title>
     <!-- Link com a folha de estilo-->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style1.css">
     <!-- Importante para SEO-->
     <meta name="description" content="Aprenda sobre síntese sonora, sound design, equipamentos de áudio e como aplicar esse conhecimento para melhorar seu som">
     <link rel="icon" href="./img/logosemfundo.png">
 </head>
     <body>
         <!--Cabeçalho-->
-        <header>
-        <!--   <h1 style="text-align: center;">DigitalSynthesizers</h1>-->
-            <div class = "menuFlex">
-                <div id="logo">
-                    <a href="./index.html"> <img src="./img/logosemfundo.png" alt="DigitalSynthesizers Logo"></a>
-                </div>
-            <nav>
+        <div class="top-content">
+            <header>
+            <div class ="menuFlex">
+                <nav>
+                    <input type="checkbox" id="check">
+                    <label for="check"><img src="./img/menu.png" alt="menu button"></label>
+                    <div class="menu">
+                    <div class="menuMixer">
+                        <div class="mixerLeftSide">
+                        </div>
+                        <a href="index.html">
+                            <div class="fader">
+                                <div class="label">
+                                    <p>Home</p>
+                                </div>
+                                <div id="slider1"></div>
+                                <div id="light1"></div>
+                            </div>
+                        </a>
+                        <a href="./dicas/dicas.html">
+                            <div class="fader">
+                                <div class="label">
+                                    <p>Dicas</p>
+                                </div>
+                            <div id="slider2">
+                            </div>
+                            <div id="light2"></div>
+                            </div>
+                        </a>
+                    <a href="./equipamentos/equipamentos.html">
+                        <div class="fader">
+                            <div class="label">
+                                <p>Equipamentos</p>
+                            </div>
+                            <div id="slider3"></div>
+                            <div id="light3"></div>
+                        </div>
+                    </a>
+                    <a href="./links/links.html">
+                        <div class="fader">
+                            <div class="label">
+                                <p>Links</p>
+                            </div>
+                            <div id="slider4">
+                            </div>
+                            <div id="light4"></div>
+                        </div>
+                    </a>
+                    <a href="./sobre/sobre.html">
+                        <div class="fader">
+                            <div class="label">
+                                <p>Sobre mim</p>
+                            </div>
+                            <div id="slider5">
+                            </div>
+                            <div id="light5"></div>
+                        </div>
+                    </a>
+                        <div class="mixerRightSide">
+                            <div id="blueKnob1"></div>
+                            <div id="blueKnob2"></div>
+                            <div id="blueKnob3"></div>
+                            <div id="blueKnob4"></div>
+                            <div id="redKnob"></div>
+                            <div id="grayKnob1"></div>
+                            <div id="grayKnob2"></div>
+                        </div>
+                    </div>
+                    </div>
+                </nav>
+                <div class="divPortable">
                 <input type="checkbox" id="check">
                 <label for="check"><img src="./img/menu.png" alt="menu button"></label>
                 <ul>
@@ -29,215 +93,166 @@
                     <li><a href="./links/links.html">Links</a></li>
                     <li><a href="./sobre/sobre.html">Sobre mim</a></li>
                 </ul>
-             </nav>
             </div>
-        </header>
-        <main class="flex">
-            <div class="container">
-                <h1>Sintonize seu conhecimento.</h1>
-                <h2>o seu portal de aprendizagem sobre áudio, sound design, produção musical, mixagem.</h2>
-                <a href=""></a>
             </div>
-        </main>
-        <section class="containerSection">
-            <div class="gallerySlider">
-                <div class="verticalSlider">
-                    <div class="slideFrame">
-                        <ul>
-                            <li class="SlideCell">
-                                <img src="./img/audio-conections.jpg" alt="audio-conections">
-                            </li>
-                            <li class="SlideCell">
-                                <img src="./img/audio-effects.jpg" alt="audio-effects">
-                            </li>
-                            <li class="SlideCell">
-                                <img src="./img/audio-effects1.jpg" alt="audio-effects1">
-                            </li>
-                            <li class="SlideCell">
-                                <img src="./img/compressor.jpg" alt="compressor">
-                            </li>
-                        </ul>
-                    </div>
+            </header>
+            <main class="bannerFlex">
+                <div id="logo">
+                    <a href="./index.html"> <img src="./img/logosemfundo.png" alt="DigitalSynthesizers Logo"></a>
+                </div>
+                <div class="bannerContainer">
+                    <h1>Sintonize seu conhecimento.</h1>
+                    <h2>o seu portal de aprendizagem sobre áudio, sound design, produção musical e mixagem.</h2>
+                    <a href=""></a>
+            </div>
+            </main>
+        </div>
+        <section class="SlideSection">
+            <div class="SlideTexto">
+                <div id="SliderTexto1">
+                    <h3>Música</h3>
+                </div>
+                <div id="SliderTexto2">
+                    <h3>Criatividade</h3>
+                </div>
+                <div id="SliderTexto3">
+                    <h3>Conhecimento</h3>
+                </div>
+        </div>
+            <div class="SlideDiv">
+            <div class="SlideMenu">
+                <div class="Slide">
+                    <img src="./img/audio-conections.jpg" alt="caroussel">
+                    <img src="./img/audio-effects.jpg" alt="caroussel">
+                    <img src="./img/audio-effects1.jpg" alt="caroussel">
+                    <img src="./img/compressor.jpg" alt="caroussel">
+                    <img src="./img/eq.jpg" alt="caroussel">
+                    <img src="./img/guitar-knobs.jpg" alt="caroussel">
+                    <img src="./img/voicings.jpg" alt="caroussel">
+                    <img src="./img/chord-extensions.png" alt="caroussel">
+                </div>
+                <div class="Slide">
+                    <img src="./img/audio-conections.jpg" alt="caroussel">
+                    <img src="./img/audio-effects.jpg" alt="caroussel">
+                    <img src="./img/audio-effects1.jpg" alt="caroussel">
+                    <img src="./img/compressor.jpg" alt="caroussel">
+                    <img src="./img/eq.jpg" alt="caroussel">
+                    <img src="./img/guitar-knobs.jpg" alt="caroussel">
+                    <img src="./img/voicings.jpg" alt="caroussel">
+                    <img src="./img/chord-extensions.png" alt="caroussel">
                 </div>
             </div>
+            <div class="SlideMenu">
+                <div class="SlideContrario">
+                    <img src="./img/audio-conections.jpg" alt="caroussel">
+                    <img src="./img/audio-effects.jpg" alt="caroussel">
+                    <img src="./img/audio-effects1.jpg" alt="caroussel">
+                    <img src="./img/compressor.jpg" alt="caroussel">
+                    <img src="./img/eq.jpg" alt="caroussel">
+                    <img src="./img/guitar-knobs.jpg" alt="caroussel">
+                    <img src="./img/voicings.jpg" alt="caroussel">
+                    <img src="./img/chord-extensions.png" alt="caroussel">
+                </div>
+                <div class="SlideContrario">
+                    <img src="./img/audio-conections.jpg" alt="caroussel">
+                    <img src="./img/audio-effects.jpg" alt="caroussel">
+                    <img src="./img/audio-effects1.jpg" alt="caroussel">
+                    <img src="./img/compressor.jpg" alt="caroussel">
+                    <img src="./img/eq.jpg" alt="caroussel">
+                    <img src="./img/guitar-knobs.jpg" alt="caroussel">
+                    <img src="./img/voicings.jpg" alt="caroussel">
+                    <img src="./img/chord-extensions.png" alt="caroussel">
+                </div>
+            </div>
+        </div>
         </section>
         <section class="containerSection"> 
             <div class="cardText">
                 <h3>Aprenda mais sobre audio</h3>
                 <p>
-                    Exemplos de aulas:
+                    Acesse nosso catalogo de dicas e tutoriais:
                 </p> 
             </div>      
-                <div class="cardMenu">
-                    <a href="./dicas/articles/gravacao/fundamentos-sobre-equalizacao.html">
-                        <div class="card">
-                            <img src="./img/eq.jpg" alt="mesa de som">
-                            <h4>
-                                Fundamentos sobre equalização
-                            </h4>
+            <div class="cardMenu">
+                <a href="./dicas/dicas.html">
+                    <div class="card">
+                        <img src="./img/compressor.jpg" alt="mesa de som">
+                        <h4>
+                            Gravação e áudio
+                        </h4>
+                        <p>
+                            Aprenda sobre gravação e mixagem ao vivo, utilize seu equipamento ao máximo.
+                        </p>
+                        <div class="cardButton">
                             <p>
-                                Aprenda equalização básica para mixagem ao vivo e gravação.
+                                Clique em mim!
                             </p>
-                            <div class="cardButton">
-                                <p>
-                                    Clique em mim!
-                                </p>
-                            </div>
                         </div>
-                    </a>
-                    <a href="./dicas/articles/gravacao/compressao-de-audio.html">
-                        <div class="card">
-                            <img src="./img/compressor.jpg" alt="mixing table">
-                            <h4>
-                                Compressão de áudio
-                            </h4>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="containerSection1">
+            <div id="sound-module">
+            <div class="cardText">
+                <h3>
+                    Manipule o som de seu instrumento de forma criativa!
+                </h3>
+                <p>
+                    Acesse nosso catalogo de dicas e tutoriais:                </p>
+            </div>
+            
+            <div id="giantKnob">
+                <img src="./img/giantKnob.png" alt="giant knob">
+            </div>
+        </div>
+            <div class="cardMenu">
+                <a href="./dicas/dicas.html">
+                    <div class="card">
+                        <img src="./img/synth.jpg" alt="efeitos de áudio">
+                        <h4>
+                            Sound Design
+                        </h4>
+                        <p>
+                            Aprenda a manipular o som de seu instrumento com facilidade.  
+                        </p>
+                        <div class="cardButton">
                             <p>
-                                Use compressão para melhorar o seu áudio e dar mais força para o som do seu instrumento.
+                                Clique em mim!
                             </p>
-                            <div class="cardButton">
-                                <p>
-                                    Clique em mim!
-                                </p>
-                            </div>
                         </div>
-                    </a>
-                    <a href="./dicas/articles/gravacao/conexoes-de-audio.html">
-                        <div class="card">
-                           <img src="./img/audio-conections.jpg" alt="cabos de áudio">
-                           <h4>
-                                Conexões de áudio
-                            </h4>
-                            <p>
-                                Descubra as várias formas de conectar seus equipamentos para gravação ou mixagem.
-                            </p>
-                            <div class="cardButton">
-                                <p>
-                                    Clique em mim!
-                                </p>
-                            </div>
-                        </div>
-                    </a>
+                    </div>
                 </div>
+                </a>
+            </div>
         </section>
         <section class="containerSection">
             <div class="cardText">
-                <h3>Manipule o som de seu instrumento de forma criativa!
+                <h3>
+                    Use teoria músical para enriquecer a sua música
                 </h3>
                 <p>
-                Exemplos de aulas:
-                </p>
+                    Acesse nosso catalogo de dicas e tutoriais:                </p>
             </div>
-                <div class="cardMenu">
-                    <a href="./dicas/articles/sound-design/">
-                        <div class="card">
-                            <img src="./img/audio-effects1.jpg" alt="efeitos de áudio">
-                            <h4>
-                                Efeitos de audio
-                            </h4>
+            <div class="cardMenu">
+                <a href="./dicas/dicas.html">
+                    <div class="card">
+                        <img src="./img/voicings.jpg" alt="Extensão de acordes">
+                        <h4>
+                            Teoria Músical
+                        </h4>
+                        <p>
+                            Aprenda a enriquecer o seu toque com teoria músical.
+                        </p>
+                        <div class="cardButton">
                             <p>
-                                Aprenda sobre efeitos como Phaser, Chorus, Delay e outros...    
+                                Clique em mim!
                             </p>
-                            <div class="cardButton">
-                                <p>
-                                    Clique em mim!
-                                </p>
-                            </div>
                         </div>
-                     </a>
-                    <a href="./dicas/articles/sound-design/sintese-sonora.html">
-                        <div class="card">
-                            <img src="./img/synth.jpg" alt="Sintetizador">
-                            <h4>
-                                Sintese sonora
-                            </h4>
-                            <p>
-                                Faça sua própria configuração em sintizadores analógicos ou digitais.     
-                            </p>
-                            <div class="cardButton">
-                                <p>
-                                    Clique em mim!
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="./dicas/articles/sound-design/knobs-e-botoes.html">
-                        <div class="card">
-                            <img src="./img/guitar-knobs.jpg" alt="Guitarra">
-                            <h4>
-                                Knobs e botões
-                            </h4>
-                            <p>
-                                Aprenda a configurar a sua guitarra, baixo, teclado, piano elétrico e outros...
-                            </p>
-                            <div class="cardButton">
-                                <p>
-                                    Clique em mim!
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
+            </div>
         </section>
-<section class="containerSection">
-    <div class="cardText">
-        <h3>
-            Use teoria músical para enriquecer a sua música
-        </h3>
-        <p>
-            Exemplos de aulas:
-        </p>
-    </div>
-        <div class="cardMenu">
-            <a href="./dicas/articles/teoria-musical/chord-extension.html">
-                <div class="card">
-                    <img src="./img/chord-extensions.png" alt="Extensão de acordes">
-                    <h4>
-                        Extensão de acordes
-                    </h4>
-                    <p>
-                        Aprenda a enriquecer acordes com teoria músical .
-                    </p>
-                    <div class="cardButton">
-                        <p>
-                            Clique em mim!
-                        </p>
-                    </div>
-                </div>
-            </a>
-            <a href="./dicas/articles/teoria-musical/voicings.html">
-                <div class="card">
-                    <img src="./img/voicings.jpg" alt="Voicings">
-                    <h4>
-                       Voicings
-                    </h4>
-                    <p>
-                     Saber escolher bem como tocar as notas tambem é muito importante.      
-                    </p>
-                    <div class="cardButton">
-                        <p>
-                            Clique em mim!
-                        </p>
-                    </div>
-                </div>
-            </a>
-            <a href="./dicas/articles/teoria-musical/ornaments.html">
-                <div class="card">
-                <img src="./img/music-ornaments.png" alt="Ornamentos músicais">
-                    <h4>
-                        Ornamentos
-                    </h4>
-                    <p>
-                        Deixe suas melodias mais lindas e enfeitadas aprendendo a ornamentar as melodias.
-                    </p>
-                    <div class="cardButton">
-                        <p>
-                            Clique em mim!
-                        </p>
-                    </div>
-                </div>
-            </a>
-        </div>
-</section>
         <footer>
             <div class="containerFooter">
                 <div id="copyright">
@@ -254,9 +269,7 @@
                         <img src="./img/instagram.png" alt="Instagram">
                     </a>
                 </div>          
-                
             </div>
-       
         </footer>
         <a href="#logo" id="topo"><img src="./img/button.png" alt="Home Arrow"></a> 
     </body>

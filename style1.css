@@ -1,0 +1,1131 @@
+/** folha de estilo do site roboticapratica.com
+@author Lucas Santos da Silva
+@link https://joseassis.com.br
+*/
+/*Importar fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jacquarda+Bastarda+9&family=Manrope:wght@200..800&family=Monofett&display=swap');
+* {
+margin:0;
+padding:0;
+border:0;
+}
+/** LAYOUT */
+html{
+    scroll-behavior:smooth;
+}
+body{
+    font-family:"Manrope",sans-serif;
+    font-size: 1em;
+}
+#logo{
+    display: flex;
+    justify-content: center; 
+}
+.menuFlex{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.mixerBottom{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right:-30px;
+}
+.bannerContainer{
+    color: var(--textoBranco);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 3%; 
+}
+.bannerContainer h2{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 10px 0;
+}
+.main div{
+    width: 100%;
+    color: var(--textoBranco);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+#blueKnob1{
+    background-image: url("./img/blueknob.png");
+    background-size: cover;
+    height: 42px;
+    width: 42px;
+    position: relative;
+    top: 50px;
+    right: -25px;
+    transition-duration: 1s;
+}
+#blueKnob2{
+    background-image: url("./img/blueknob.png");
+    background-size: cover;
+    height: 42px;
+    width: 42px;
+    position: relative;
+    top: 77px;
+    right: -25px;
+    transition-duration: 1s;
+}
+#redKnob{
+    background-image: url("./img/redknob.png");
+    background-size: cover;
+    height: 42px;
+    width: 42px;
+    position: relative;
+    top: 18px;
+    right: -25px;
+    transition-duration: 1s;
+}
+#blueKnob3{
+    background-image: url("./img/blueknob.png");
+    background-size: cover;
+    height: 42px;
+    width: 42px;
+    position: relative;
+    top: 35px;
+    right: -115px;
+    transition-duration: 1s;
+}
+#blueKnob4{
+    background-image: url("./img/blueknob.png");
+    background-size: cover;
+    height: 42px;
+    width: 42px;
+    position: relative;
+    top: -75px;
+    right: -115px;
+    transition-duration: 1s;
+}
+#grayKnob1{
+    background-image: url("./img/grayknob.png");
+    background-size: cover;
+    height: 42px;
+    width: 42px;
+    position: relative;
+    top: -23px;
+    right: -115px;
+    transition-duration: 1s;
+}
+#grayKnob2{
+    background-image: url("./img/grayknob.png");
+    background-size: cover;
+    height: 42px;
+    width: 42px;
+    position: relative;
+    top: -204px;
+    right: -209px;
+    transition-duration: 1s;
+}
+.mixerRightSide:hover #blueKnob1{
+    transform: rotate(180deg);
+}
+.mixerRightSide:hover #blueKnob2{
+    transform: rotate(297deg);
+}
+.mixerRightSide:hover #blueKnob3{
+    transform: rotate(250deg);
+}
+.mixerRightSide:hover #blueKnob4{
+    transform: rotate(100deg);
+}
+.mixerRightSide:hover #redKnob{
+    transform: rotate(80deg);
+}
+.mixerRightSide:hover #grayKnob1{
+    transform: rotate(180deg);
+}
+.mixerRightSide:hover #grayKnob2{
+    transform: rotate(99deg);
+}
+.SlideSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:340px;
+    padding: 20px;
+    background-color: var(--layoutMenuFundo);
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.5);
+}
+.SlideTexto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 65%;
+}
+.SlideTexto h3{
+    font-size: 3em;
+    color: var(--textoBranco);
+}
+#SliderTexto1{
+    background-color: var(--selectedItem);
+    width: 20%;
+    border-radius: 10px;
+}
+#SliderTexto2{
+    background-color: var(--layoutCorSecundaria);
+    width: 30%;
+    border-radius: 20px;
+}
+#SliderTexto3{
+    background-color: var(--layoutCorPrincipal);
+    width: 40%;
+    border-radius: 30px;
+}
+.SlideDiv{
+    display: flex;
+    flex-direction: row;
+    width: 35%;
+}
+.SlideMenu{
+    background-color: var(--layoutPreto);
+    overflow: hidden;
+    white-space:nowrap;
+    width: 50%;
+    display: inline-grid;
+}
+.Slide img:hover,
+.SlideContrario img:hover{
+    transform: scale(1.05);
+}
+.SlideContrario img,
+.Slide img{
+    width: 91.5%;
+    margin: 5px 10px;
+    transform: scale(1);
+    transition: 1s;
+}
+.Slide{
+    animation: 80s slide infinite linear;
+    display: inline-grid;
+}
+.SlideContrario{
+    animation: 80s SlideContrario infinite linear;
+    display: inline-grid;
+}
+.SlideMenu:hover .Slide{
+    animation-play-state: paused;
+}
+.SlideMenu:hover .SlideContrario{
+    animation-play-state: paused;
+}
+@keyframes slide {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-100%);
+
+    }
+}
+@keyframes SlideContrario{
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(0);
+
+    }
+}
+@keyframes slideMobile {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+
+    }
+}
+@keyframes SlideContrarioMobile{
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+
+    }
+}
+@keyframes navigate {
+    /* 0 & 100% might not be needed */
+      0% {
+        opacity: 0%;
+      }
+      25%{
+        opacity: 0%;
+      }
+      50% {
+        opacity: 100%;
+      }
+      75%{
+        opacity: 0%;
+      }
+      100%{
+        opacity: 100%;
+      }
+    }
+#sound-module{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    border-radius: 15px;
+    border: 1px solid var(--textoCinza);
+    box-shadow: 0px 10px 25px var(--layoutPreto);
+}
+.cardMenu{
+    justify-content: center;
+}
+.cardMenu a{
+    text-decoration: none;
+    color: var(--textoPreto);
+    display: flex;
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--layoutCardFundo);
+}
+.card img{
+    border-radius: 10px;
+}
+.cardButton{
+    display: flex;
+    justify-content: center;
+    background-color: var(--layoutCorSecundaria);
+    color: var(--textoPreto);
+    font-weight: 700;
+}
+.containerSection1 .card .cardButton{
+    background-color: var(--layoutCorPrincipal);
+    color:var(--textoPreto);
+}
+.containerSection,
+.containerSection1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.containerSection{
+    flex-direction: row;
+}
+.containerSection1{
+    background-color: var(--layoutMenuFundo);
+    color: var(--textoBranco);
+    flex-direction: row-reverse;
+}
+.containerSection1 .card{
+    background-color: var(--layoutCardFundo1);
+    color: var(--textoBranco)
+}
+.containerSection1 .cardText{
+    background-image: url("./img/lcdScreen.png");
+    background-size:contain;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 292px;
+    width: 880px;
+}
+.containerSection1 .cardText p{
+    margin-top: 4%;
+}
+#giantKnob{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+#giantKnob img{
+    width: 10em;
+    height: 10em;
+}
+#topo{
+    position: fixed;
+    bottom:10px;
+    right:10px;
+    opacity: 50%;
+}
+.containerFooter{
+    display: flex;
+    flex-direction: row;
+    color: var(--textoBranco);
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+footer{
+    background-color: var(--layoutMenuFundo);
+}
+:root{
+    --textoBranco: #ffffff;
+    --textoPreto: #000000;
+    --selectedItem: #c90f0f;
+    --selectedItem2:#b1ff09;
+    --layoutEnfase: #f18716;
+    --layoutPreto: #000000;
+    --layoutCorPrincipal: #0367A6;
+    --layoutCorSecundaria: #F2A007;
+    --layoutSombraPrincipal: #022859;
+    --layoutSombraPrincipal2: #010D26;
+    --layoutSombraSecundaria: #BF5B04;
+    --layoutCardFundo:#ebebeb;
+    --layoutCardFundo1:#505050;
+    --layoutMenuFundo: #1f1e22;
+    --textoCinza: #6b6c75;
+}
+
+
+
+
+/* Smartphone portrait */
+@media (min-width:375px){
+    .container{
+        max-width:1000px;
+    }
+    
+}
+/* Smartphone landscape */
+@media (min-width:576px){
+    .container{
+        max-width:540px;
+    }
+}
+/* Tablet portrait */
+@media (min-width:768px){
+    .container{
+        max-width:720px;
+    }
+}
+/* Tablet landscape */
+@media (min-width:992px){
+    .container{
+        max-width:960px;
+        font-size: 30px;
+    }
+}
+/* PCs, notebooks HD ou TV */
+@media (min-width:1200px){
+    .container{
+        max-width:1000px;
+    }
+    #logo{
+        height: 40%;
+        width: 100%;
+        margin-top: 15px;
+    }
+    #logo img{
+        height: 9em;
+        width: 11em;
+        top:50%;
+    }
+    .top-content{
+        background-image: url("./img/background2.jpg");
+        background-size: cover;
+        height: 800px;
+        background-attachment:fixed;
+    }
+    .divPortable{
+        display:none;
+    }
+    .bannerFlex{
+        height: 550px;
+    }
+    .bannerContainer{
+        height: 60%;
+    }
+    .menuFlex{
+        width: 100%;
+        height: 50%;
+    }
+    header{
+        height: 250px;
+    }
+    .mixerBottom{
+        background-image: url("./img/mixerBottom.png");
+        background-size: cover;
+        height: 46px;
+        width: 957px;
+    }
+    .mixerRightSide{
+        background-image: url("./img/mixerRightSide.png");
+        background-size: cover;
+        height: 250px;
+        width: 327px;
+    }
+    .mixerLeftSide{
+        background-image: url("./img/mixerLeftSide.png");
+        background-size: cover;
+        height: 250px;
+        width: 35px;
+    }
+    .menuFlex{
+        height: 100%;
+    }
+    nav label{
+        display: none;
+    }
+    .menuMixer .label a{
+        font-size: 1.1em;
+        font-weight: 800;
+    }
+    #check{
+        display: none;
+    }
+    .menuMixer{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 250px;
+        background-size: cover;
+    }
+    .fader{
+        background-image: url("./img/mixerMenu2.png");
+        background-size: auto;
+        margin-right: 5px;
+        height: 250px;
+        width: 140px;
+        text-align: center;
+    }
+    .menuMixer a{
+        text-decoration: none;
+        background-image: url("./img/menuBackground.png");
+    }
+    .fader p{
+        position: relative;
+        top:215px;
+        color: var(--textoPreto);
+        font-weight: 800;
+        font-size: 1.1em;
+    }
+    .containerSection{
+        padding: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        text-align: center;
+    }
+    #slider1{
+        background-image: url("./img/sliderBanner.png");
+        background-size: auto;
+        height: 56px;
+        width: 27px;
+        position: relative;
+        top: 120px;
+        right: -38%;
+        transition: 1s;
+    }
+    .fader:hover #slider1{
+        top: 0px;
+    }
+    #slider2{
+        background-image: url("./img/sliderBanner.png");
+        background-size: auto;
+        height: 56px;
+        width: 27px;
+        position: relative;
+        top: 120px;
+        right: -38%;
+        transition: 1s;
+    }
+    .fader:hover #slider2{
+        top: 0px;
+    }
+    #slider3{
+        background-image: url("./img/sliderBanner.png");
+        background-size: auto;
+        height: 56px;
+        width: 27px;
+        position: relative;
+        top: 120px;
+        right: -38%;
+        transition: 1s;
+    }
+    .fader:hover #slider3{
+        top: 0px;
+    }
+    #slider4{
+        background-image: url("./img/sliderBanner.png");
+        background-size: auto;
+        height: 56px;
+        width: 27px;
+        position: relative;
+        top: 120px;
+        right: -38%;
+        transition: 1s;
+    }
+    .fader:hover #slider4{
+        top: 0px;
+    }
+    #slider5{
+        background-image: url("./img/sliderBanner.png");
+        background-size: auto;
+        height: 56px;
+        width: 27px;
+        position: relative;
+        top: 120px;
+        right: -38%;
+        transition: 1s;
+    }
+    .fader:hover #slider5{
+        top: 0px;
+    }
+    nav{
+        display:grid;
+    }
+    .fader:hover #light1{
+        animation: navigate 1s infinite;
+    }
+    #light1{
+        width: 10px;
+        height: 10px;
+        background-image: url("./img/light.png");
+        background-size:cover;
+        position: relative;
+        top:-70px;
+        left:46%;
+        z-index: 1;
+        opacity: 0%;
+    }
+    .fader:hover #light2{
+        animation: navigate 0.5s infinite;
+    }
+    #light2{
+        width: 10px;
+        height: 10px;
+        background-image: url("./img/light.png");
+        background-size:cover;
+        position: relative;
+        top:-70px;
+        left:46%;
+        z-index: 1;
+        opacity: 0%;
+    }
+    .fader:hover #light3{
+        animation: navigate 0.5s infinite;
+    }
+    #light3{
+        width: 10px;
+        height: 10px;
+        background-image: url("./img/light.png");
+        background-size:cover;
+        position: relative;
+        top:-70px;
+        left:46%;
+        z-index: 1;
+        opacity: 0%;
+    }
+    .fader:hover #light4{
+        animation: navigate 0.5s infinite;
+    }
+    #light4{
+        width: 10px;
+        height: 10px;
+        background-image: url("./img/light.png");
+        background-size:cover;
+        position: relative;
+        top:-70px;
+        left:46%;
+        z-index: 1;
+        opacity: 0%;
+    }
+    .fader:hover #light5{
+        animation: navigate 0.5s infinite;
+    }
+    #light5{
+        width: 10px;
+        height: 10px;
+        background-image: url("./img/light.png");
+        background-size:cover;
+        position: relative;
+        top:-70px;
+        left:46%;
+        z-index: 1;
+        opacity: 0%;
+    }
+    main div{
+        height: 500px;
+    }
+    main div h1{
+        font-size: 4em;
+    }
+    main div h2{
+        font-size: 1.275em;
+    }
+    .containerSection,
+    .containerSection1{
+        height:600px;
+        transition: 1s;
+    }
+    .containerSection:hover,
+    .containerSection1:hover{
+        height:800px;
+    }
+    .SlideSection{
+        height: 300px;
+        transition: 1s;
+    }
+    .cardMenu{
+        width: 40%;
+    }
+    #sound-module{
+        height: 412px;
+        width: 60%;
+    }
+    #giantKnob{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 1s;
+        width: 50%;
+        height: 600px;
+    }
+    #giantKnob img{
+        width: 10em;
+        height: 10em;
+    }
+    .containerSection1:hover #giantKnob{
+        transform: rotate(50deg);
+    }
+    .cardText{
+        width: 70%;
+    }
+    .card{
+        border-radius: 10px;
+        width: 500px;
+        height: 500px;
+        margin: 0px;
+        padding: 15px;
+    }
+    .card h4{
+        margin-top: 20px;
+        font-size: 1.5em;
+    }
+    .card p{
+        margin-top: 10px;
+        font-size: 1.3em;
+    }
+    .card img{
+        height: 300px;
+        width: 498px;
+    }
+    .cardText{
+        margin: 1%;
+    }
+    .cardText h3{
+        font-size: 2.2em;
+    }
+    .cardText p{
+        font-size: 2em;
+    }
+    .cardButton{
+        height: 50px;
+        width: 200px;
+        margin-top: 20px;
+    }
+    .containerSection1 .cardText{
+        font-size: 0.8em;
+        color: var(--textoPreto);
+        height: 80%;
+    }
+    #social img{
+        height: 40px;
+        width: 40px;
+    }
+    .containerFooter{
+        height: 60px;
+    }
+    footer{
+        margin-top: 25px;
+        height: 60px;
+    }
+    .SlideTexto h3{
+        font-size: 3em;
+    }
+    #SliderTexto1{
+        width: 20%;
+        border-radius: 10px;
+    }
+    #SliderTexto2{
+        width: 30%;
+        border-radius: 20px;
+    }
+    #SliderTexto3{
+        width: 40%;
+        border-radius: 30px;
+    }
+}
+/* PCs ou notebooks Full HD */
+@media (min-width:1400px){
+    .container{
+        max-width:1140px;   
+    }
+    #logo{
+        height: 40%;
+        width: 100%;
+        margin-top: 15px;
+    }
+    #logo img{
+        height: 9em;
+        width: 11em;
+    }
+    .top-content{
+        background-image: url("./img/background2.jpg");
+        background-size: cover;
+        height: 800px;
+        background-attachment:fixed;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .bannerFlex{
+        height: 550px;
+    }
+    .bannerContainer{
+        height: 60%;
+    }
+    .menuFlex{
+        width: 100%;
+        height: 50%;
+    }
+    header{
+        height: 250px;
+    }
+    .mixerBottom{
+        background-image: url("./img/mixerBottom.png");
+        background-size: cover;
+        height: 46px;
+        width: 957px;
+    }
+    .divPortable{
+        display:none;
+    }
+    .mixerRightSide{
+        background-image: url("./img/mixerRightSide.png");
+        background-size: cover;
+        height: 250px;
+        width: 327px;
+    }
+    .mixerLeftSide{
+        background-image: url("./img/mixerLeftSide.png");
+        background-size: cover;
+        height: 250px;
+        width: 35px;
+    }
+    .menuFlex{
+        height: 100%;
+    }
+    nav label{
+        display: none;
+    }
+    .menuMixer .label a{
+        font-size: 1.1em;
+        font-weight: 800;
+    }
+    #check{
+        display: none;
+    }
+    .menuMixer{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 250px;
+        background-size: cover;
+    }
+    .fader{
+        background-image: url("./img/mixerMenu2.png");
+        background-size: auto;
+        margin-right: 5px;
+        height: 250px;
+        width: 140px;
+        text-align: center;
+    }
+    .menuMixer a{
+        text-decoration: none;
+        background-image: url("./img/menuBackground.png");
+    }
+    .fader p{
+        position: relative;
+        top:215px;
+        color: var(--textoPreto);
+        font-weight: 800;
+        font-size: 1.1em;
+    }
+    .containerSection{
+        padding: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        text-align: center;
+    }
+    #slider1{
+        background-image: url("./img/sliderBanner.png");
+        background-size: auto;
+        height: 56px;
+        width: 27px;
+        position: relative;
+        top: 120px;
+        right: -38%;
+        transition: 1s;
+    }
+    .fader:hover #slider1{
+        top: 0px;
+    }
+    #slider2{
+        background-image: url("./img/sliderBanner.png");
+        background-size: auto;
+        height: 56px;
+        width: 27px;
+        position: relative;
+        top: 120px;
+        right: -38%;
+        transition: 1s;
+    }
+    .fader:hover #slider2{
+        top: 0px;
+    }
+    #slider3{
+        background-image: url("./img/sliderBanner.png");
+        background-size: auto;
+        height: 56px;
+        width: 27px;
+        position: relative;
+        top: 120px;
+        right: -38%;
+        transition: 1s;
+    }
+    .fader:hover #slider3{
+        top: 0px;
+    }
+    #slider4{
+        background-image: url("./img/sliderBanner.png");
+        background-size: auto;
+        height: 56px;
+        width: 27px;
+        position: relative;
+        top: 120px;
+        right: -38%;
+        transition: 1s;
+    }
+    .fader:hover #slider4{
+        top: 0px;
+    }
+    #slider5{
+        background-image: url("./img/sliderBanner.png");
+        background-size: auto;
+        height: 56px;
+        width: 27px;
+        position: relative;
+        top: 120px;
+        right: -38%;
+        transition: 1s;
+    }
+    .fader:hover #slider5{
+        top: 0px;
+    }
+    nav{
+        display:grid;
+    }
+    .fader:hover #light1{
+        animation: navigate 1s infinite;
+    }
+    #light1{
+        width: 10px;
+        height: 10px;
+        background-image: url("./img/light.png");
+        background-size:cover;
+        position: relative;
+        top:-70px;
+        left:46%;
+        z-index: 1;
+        opacity: 0%;
+    }
+    .fader:hover #light2{
+        animation: navigate 0.5s infinite;
+    }
+    #light2{
+        width: 10px;
+        height: 10px;
+        background-image: url("./img/light.png");
+        background-size:cover;
+        position: relative;
+        top:-70px;
+        left:46%;
+        z-index: 1;
+        opacity: 0%;
+    }
+    .fader:hover #light3{
+        animation: navigate 0.5s infinite;
+    }
+    #light3{
+        width: 10px;
+        height: 10px;
+        background-image: url("./img/light.png");
+        background-size:cover;
+        position: relative;
+        top:-70px;
+        left:46%;
+        z-index: 1;
+        opacity: 0%;
+    }
+    .fader:hover #light4{
+        animation: navigate 0.5s infinite;
+    }
+    #light4{
+        width: 10px;
+        height: 10px;
+        background-image: url("./img/light.png");
+        background-size:cover;
+        position: relative;
+        top:-70px;
+        left:46%;
+        z-index: 1;
+        opacity: 0%;
+    }
+    .fader:hover #light5{
+        animation: navigate 0.5s infinite;
+    }
+    #light5{
+        width: 10px;
+        height: 10px;
+        background-image: url("./img/light.png");
+        background-size:cover;
+        position: relative;
+        top:-70px;
+        left:46%;
+        z-index: 1;
+        opacity: 0%;
+    }
+    main div{
+        height: 500px;
+    }
+    main div h1{
+        font-size: 4em;
+    }
+    main div h2{
+        font-size: 1.275em;
+    }
+    .containerSection,
+    .containerSection1{
+        height:600px;
+        transition: 1s;
+    }
+    .containerSection:hover,
+    .containerSection1:hover{
+        height:800px;
+    }
+    .SlideSection{
+        height: 300px;
+        transition: 1s;
+    }
+    .cardMenu{
+        width: 40%;
+    }
+    #sound-module{
+        height: 250px;
+        width: 40%;
+    }
+    #giantKnob{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 1s;
+        width: 50%;
+        height: 600px;
+    }
+    #giantKnob img{
+        width: 10em;
+        height: 10em;
+    }
+    .containerSection1:hover #giantKnob{
+        transform: rotate(50deg);
+    }
+    .cardText{
+        width: 70%;
+    }
+    .card{
+        border-radius: 10px;
+        width: 500px;
+        height: 500px;
+        margin: 0px;
+        padding: 15px;
+    }
+    .card h4{
+        margin-top: 20px;
+        font-size: 1.5em;
+    }
+    .card p{
+        margin-top: 10px;
+        font-size: 1.3em;
+    }
+    .card img{
+        height: 300px;
+        width: 498px;
+    }
+    .cardText{
+        margin: 1%;
+    }
+    .cardText h3{
+        font-size: 2.2em;
+    }
+    .cardText p{
+        font-size: 2em;
+    }
+    .cardButton{
+        height: 50px;
+        width: 200px;
+        margin-top: 20px;
+    }
+    .containerSection1 .cardText{
+        font-size: 0.6em;
+        color: var(--textoPreto);
+        height: 80%;
+    }
+    #social img{
+        height: 40px;
+        width: 40px;
+    }
+    .containerFooter{
+        height: 60px;
+    }
+    footer{
+        margin-top: 25px;
+        height: 60px;
+    }
+    .SlideTexto h3{
+        font-size: 3em;
+    }
+    #SliderTexto1{
+        width: 20%;
+        border-radius: 10px;
+    }
+    #SliderTexto2{
+        width: 30%;
+        border-radius: 20px;
+    }
+    #SliderTexto3{
+        width: 40%;
+        border-radius: 30px;
+    }
+}

@@ -17,7 +17,6 @@ html{
 body{
     font-family:"Manrope",sans-serif;
     font-size: 1em;
-    
 }
 body h2, h3, p{
     color:var(--pretoLayout);
@@ -115,7 +114,6 @@ label {
     from {padding-right: 15px; opacity: 0%;}
     to {padding-right: 5px; opacity: 100%;}
 }
-
 
 .cardMenu{
     height: 580px;
@@ -1247,17 +1245,22 @@ footer div a img{
         align-items:center;
     }
     .menuFlex {
-        height: 190px;
+        height: 205px;
         display:flex;
         flex-direction: column;
         margin: auto;
         align-items:center;
         justify-content: space-between;
+        background-image: url("./img/menuBackground.png");
+        background-size: cover;
     }
     #logo img{
         width:130px;
         height:100px;
         margin: 10px 0px 0px 10px;
+        position: absolute;
+        top:25px;
+        right:25px
     }
     label {
         display: none;
@@ -1283,6 +1286,27 @@ footer div a img{
     nav ul li a:hover{
         color: var(--vermelhoLayout);
     }  
+    .menuMixer{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top:0px;
+        right:34%;
+    }
+    .fader{
+        background-image: url("./img/mixerMenu1.png");
+        background-size: auto;
+        margin-right: 5px;
+        height: 204px;
+        width: 103px;
+        text-align: center;
+    }
+    .fader a{
+        position: relative;
+        top:180px;
+        font-size: 0.9em;
+        color: var(--textoPreto);
+    }
     .containerSection{
         padding: 15px 0px;
         margin-bottom: 25px;
@@ -1291,6 +1315,160 @@ footer div a img{
         justify-content: center;
         align-items: center;
         text-align: center;
+    }
+    #slider1{
+        background-image: url("./img/sliderBanner.png");
+        background-size: auto;
+        height: 56px;
+        width: 27px;
+        position: relative;
+        top: 90px;
+        right: -35%;
+        transition: 1s;
+    }
+    .fader:hover #slider1{
+        top: 0px;
+    }
+    #slider2{
+        background-image: url("./img/sliderBanner.png");
+        background-size: auto;
+        height: 56px;
+        width: 27px;
+        position: relative;
+        top: 90px;
+        right: -35%;
+        transition: 1s;
+    }
+    .fader:hover #slider2{
+        top: 0px;
+    }
+    #slider3{
+        background-image: url("./img/sliderBanner.png");
+        background-size: auto;
+        height: 56px;
+        width: 27px;
+        position: relative;
+        top: 90px;
+        right: -35%;
+        transition: 1s;
+    }
+    .fader:hover #slider3{
+        top: 0px;
+    }
+    #slider4{
+        background-image: url("./img/sliderBanner.png");
+        background-size: auto;
+        height: 56px;
+        width: 27px;
+        position: relative;
+        top: 90px;
+        right: -35%;
+        transition: 1s;
+    }
+    .fader:hover #slider4{
+        top: 0px;
+    }
+    #slider5{
+        background-image: url("./img/sliderBanner.png");
+        background-size: auto;
+        height: 56px;
+        width: 27px;
+        position: relative;
+        top: 90px;
+        right: -35%;
+        transition: 1s;
+    }
+    .fader:hover #slider5{
+        top: 0px;
+    }
+    .fader:hover #light1{
+        animation: navigate 1s infinite;
+    }
+    #light1{
+        width: 10px;
+        height: 10px;
+        background-image: url("./img/light.png");
+        background-size:cover;
+        position: relative;
+        top:-70px;
+        left:45%;
+        z-index: 1;
+        opacity: 0%;
+    }
+    .fader:hover #light2{
+        animation: navigate 0.5s infinite;
+    }
+    #light2{
+        width: 10px;
+        height: 10px;
+        background-image: url("./img/light.png");
+        background-size:cover;
+        position: relative;
+        top:-70px;
+        left:45%;
+        z-index: 1;
+        opacity: 0%;
+    }
+    .fader:hover #light3{
+        animation: navigate 0.5s infinite;
+    }
+    #light3{
+        width: 10px;
+        height: 10px;
+        background-image: url("./img/light.png");
+        background-size:cover;
+        position: relative;
+        top:-70px;
+        left:45%;
+        z-index: 1;
+        opacity: 0%;
+    }
+    .fader:hover #light4{
+        animation: navigate 0.5s infinite;
+    }
+    #light4{
+        width: 10px;
+        height: 10px;
+        background-image: url("./img/light.png");
+        background-size:cover;
+        position: relative;
+        top:-70px;
+        left:45%;
+        z-index: 1;
+        opacity: 0%;
+    }
+    .fader:hover #light5{
+        animation: navigate 0.5s infinite;
+    }
+    #light5{
+        width: 10px;
+        height: 10px;
+        background-image: url("./img/light.png");
+        background-size:cover;
+        position: relative;
+        top:-70px;
+        left:45%;
+        z-index: 1;
+        opacity: 0%;
+    }
+
+    @keyframes navigate {
+    /* 0 & 100% might not be needed */
+      0% {
+        opacity: 0%;
+      }
+      25%{
+        opacity: 0%;
+      }
+      50% {
+        opacity: 100%;
+      }
+      75%{
+        opacity: 0%;
+      }
+      100%{
+        opacity: 100%;
+      }
     }
     main h1{
         font-size: 1.5em;

@@ -21,6 +21,11 @@ body{
     display: flex;
     justify-content: center; 
 }
+.top-content{
+    background-image: url("./img/background2.jpg");
+    background-size: cover;
+    background-attachment:fixed;
+}
 .menuFlex{
     display: flex;
     flex-direction: column;
@@ -364,12 +369,16 @@ body{
     display: flex;
     flex-direction: row;
     color: var(--textoBranco);
-    justify-content: space-around;
+    justify-content: space-between;
     text-align: center;
     align-items: center;
+    width: 100%;
 }
 footer{
     background-color: var(--layoutMenuFundo);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 :root{
     --textoBranco: #ffffff;
@@ -397,18 +406,203 @@ footer{
     .container{
         max-width:1000px;
     }
-    
+    nav,.cardText,#sound-module{
+        display: none;
+    }
+    .divPortable{
+        display: flex;
+    }
+    .top-content{
+        height: 600px;
+        background-size: 400%;
+        background-position: -700px -100px;
+    }
+    #logo img{
+        margin-top: 55px;
+        margin-bottom: 0;
+        height: 120px;
+    }
+    #check {
+        display: none;
+    }
+    label{
+        font-size: 3em;
+        position: fixed;
+        top: 5px;
+        right: 15px;
+        color: rgba(255, 255, 255, 0.5);
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.2);
+        padding: 5px;
+        border-radius: 25%;
+    }
+    .divPortable ul {
+        list-style: none;
+        background-color: rgba(31, 31, 31, 0.70);
+        height: 100vh;
+        position: fixed;
+        top: 80px;
+        right: 0%;
+        width: 90%;
+        transition: all 0.5s;
+        z-index: 1;
+    }   
+    #check:checked~ul {
+        right: -100%;
+    }
+    .divPortable ul li {
+        padding: 17px 20px;
+        border-bottom: 1px solid #a9a9a9;
+        text-align: right;
+    }
+    .divPortable ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
+    #menuButton1,
+    #menuButton2,
+    #menuButton3,
+    #menuButton4,
+    #menuButton5 {
+    padding-right: 5px;
+    display: inline;
+    color:var(--layoutEnfase);
+    animation-name: introAnimation;
+    animation-duration: 2s;
+}
+    .bannerFlex{
+        height: 480px;
+        justify-content: center;
+    }
+    .bannerContainer{
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .bannerContainer h1{
+        font-size: 2.3em;
+    }
+    .bannerContainer h2{
+        font-size: 1.3em;
+    }
+    .SlideSection{
+        padding: 0;
+    }
+    .SlideTexto{
+        width: 65%;
+        font-size: 0.6em;
+    }
+    #SliderTexto1{
+        width: 50%;
+    }
+    #SliderTexto2{
+        width: 80%;
+    }
+    #SliderTexto3{
+        width: 95%;
+    }
+    .containerSection,
+    .containerSection1{
+        height: 700px;
+        padding: 0 10px;
+    }
+    .containerSection1{
+        flex-direction: column;
+        padding: 0 0;
+    }
+    .cardMenu{
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+    }
+    .cardMenu a{
+        height: 100%;
+    }
+    .card{ 
+        justify-content: center;
+        padding: 10px;
+        background-color: rgba(0,0,0,0);
+        height: 100%;
+        width: 100%;
+    }
+    .containerSection1 .card{
+        justify-content: center;
+    }
+    .card img{
+        height: 30%;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .card h4{
+        font-size: 2em;
+        margin-top: 50px;
+    }
+    .card p{
+        margin: 30px 0 40px 0;
+    }
+    .cardButton{
+        height: 40px;
+        width: 170px;
+        text-align: center;
+        align-items: center;
+    }
+    .cardButton p{
+        font-size: 1.2em;
+        margin-top: 0 0 0 0;
+    }
+    #sound-module{
+        width: 100%;
+        height: 30%;
+    }
+    #giantKnob img{
+        height: 80px;
+        width: 80px;
+    }
+    #social img{
+        height: 25px;
+    }
+    footer{
+        height: 35px;
+    }
+    .containerFooter{
+        padding: 0 10px;
+    }
 }
 /* Smartphone landscape */
 @media (min-width:576px){
     .container{
         max-width:540px;
     }
+    .top-content{
+        background-size: 230%;
+     }
+    .containerSection,
+    .containerSection1{
+        height: 500px;
+    }
+    .card{
+        justify-content: center;
+    }
+    .card p{
+        top: 0%;
+        margin: 20px 0 30px 0 ;
+    }
+    .card h4{
+        margin-top:30px;
+    }
+    .card img{
+        height: 35%;
+        width: 50%;
+    }
 }
 /* Tablet portrait */
 @media (min-width:768px){
     .container{
         max-width:720px;
+    }
+    .top-content{
+       background-size: 200%;
+       height: 685px;
     }
 }
 /* Tablet landscape */
@@ -423,360 +617,8 @@ footer{
     .container{
         max-width:1000px;
     }
-    #logo{
-        height: 40%;
-        width: 100%;
-        margin-top: 15px;
-    }
-    #logo img{
-        height: 9em;
-        width: 11em;
-        top:50%;
-    }
-    .top-content{
-        background-image: url("./img/background2.jpg");
-        background-size: cover;
-        height: 800px;
-        background-attachment:fixed;
-    }
-    .divPortable{
-        display:none;
-    }
-    .bannerFlex{
-        height: 550px;
-    }
-    .bannerContainer{
-        height: 60%;
-    }
-    .menuFlex{
-        width: 100%;
-        height: 50%;
-    }
-    header{
-        height: 250px;
-    }
-    .mixerBottom{
-        background-image: url("./img/mixerBottom.png");
-        background-size: cover;
-        height: 46px;
-        width: 957px;
-    }
-    .mixerRightSide{
-        background-image: url("./img/mixerRightSide.png");
-        background-size: cover;
-        height: 250px;
-        width: 327px;
-    }
-    .mixerLeftSide{
-        background-image: url("./img/mixerLeftSide.png");
-        background-size: cover;
-        height: 250px;
-        width: 35px;
-    }
-    .menuFlex{
-        height: 100%;
-    }
-    nav label{
-        display: none;
-    }
-    .menuMixer .label a{
-        font-size: 1.1em;
-        font-weight: 800;
-    }
-    #check{
-        display: none;
-    }
-    .menuMixer{
+    nav,.cardText,#sound-module{
         display: flex;
-        flex-direction: row;
-        position: relative;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 250px;
-        background-size: cover;
-    }
-    .fader{
-        background-image: url("./img/mixerMenu2.png");
-        background-size: auto;
-        margin-right: 5px;
-        height: 250px;
-        width: 140px;
-        text-align: center;
-    }
-    .menuMixer a{
-        text-decoration: none;
-        background-image: url("./img/menuBackground.png");
-    }
-    .fader p{
-        position: relative;
-        top:215px;
-        color: var(--textoPreto);
-        font-weight: 800;
-        font-size: 1.1em;
-    }
-    .containerSection{
-        padding: 0px;
-        display: flex;
-        flex-direction: row;
-        justify-content: left;
-        align-items: center;
-        text-align: center;
-    }
-    #slider1{
-        background-image: url("./img/sliderBanner.png");
-        background-size: auto;
-        height: 56px;
-        width: 27px;
-        position: relative;
-        top: 120px;
-        right: -38%;
-        transition: 1s;
-    }
-    .fader:hover #slider1{
-        top: 0px;
-    }
-    #slider2{
-        background-image: url("./img/sliderBanner.png");
-        background-size: auto;
-        height: 56px;
-        width: 27px;
-        position: relative;
-        top: 120px;
-        right: -38%;
-        transition: 1s;
-    }
-    .fader:hover #slider2{
-        top: 0px;
-    }
-    #slider3{
-        background-image: url("./img/sliderBanner.png");
-        background-size: auto;
-        height: 56px;
-        width: 27px;
-        position: relative;
-        top: 120px;
-        right: -38%;
-        transition: 1s;
-    }
-    .fader:hover #slider3{
-        top: 0px;
-    }
-    #slider4{
-        background-image: url("./img/sliderBanner.png");
-        background-size: auto;
-        height: 56px;
-        width: 27px;
-        position: relative;
-        top: 120px;
-        right: -38%;
-        transition: 1s;
-    }
-    .fader:hover #slider4{
-        top: 0px;
-    }
-    #slider5{
-        background-image: url("./img/sliderBanner.png");
-        background-size: auto;
-        height: 56px;
-        width: 27px;
-        position: relative;
-        top: 120px;
-        right: -38%;
-        transition: 1s;
-    }
-    .fader:hover #slider5{
-        top: 0px;
-    }
-    nav{
-        display:grid;
-    }
-    .fader:hover #light1{
-        animation: navigate 1s infinite;
-    }
-    #light1{
-        width: 10px;
-        height: 10px;
-        background-image: url("./img/light.png");
-        background-size:cover;
-        position: relative;
-        top:-70px;
-        left:46%;
-        z-index: 1;
-        opacity: 0%;
-    }
-    .fader:hover #light2{
-        animation: navigate 0.5s infinite;
-    }
-    #light2{
-        width: 10px;
-        height: 10px;
-        background-image: url("./img/light.png");
-        background-size:cover;
-        position: relative;
-        top:-70px;
-        left:46%;
-        z-index: 1;
-        opacity: 0%;
-    }
-    .fader:hover #light3{
-        animation: navigate 0.5s infinite;
-    }
-    #light3{
-        width: 10px;
-        height: 10px;
-        background-image: url("./img/light.png");
-        background-size:cover;
-        position: relative;
-        top:-70px;
-        left:46%;
-        z-index: 1;
-        opacity: 0%;
-    }
-    .fader:hover #light4{
-        animation: navigate 0.5s infinite;
-    }
-    #light4{
-        width: 10px;
-        height: 10px;
-        background-image: url("./img/light.png");
-        background-size:cover;
-        position: relative;
-        top:-70px;
-        left:46%;
-        z-index: 1;
-        opacity: 0%;
-    }
-    .fader:hover #light5{
-        animation: navigate 0.5s infinite;
-    }
-    #light5{
-        width: 10px;
-        height: 10px;
-        background-image: url("./img/light.png");
-        background-size:cover;
-        position: relative;
-        top:-70px;
-        left:46%;
-        z-index: 1;
-        opacity: 0%;
-    }
-    main div{
-        height: 500px;
-    }
-    main div h1{
-        font-size: 4em;
-    }
-    main div h2{
-        font-size: 1.275em;
-    }
-    .containerSection,
-    .containerSection1{
-        height:600px;
-        transition: 1s;
-    }
-    .containerSection:hover,
-    .containerSection1:hover{
-        height:800px;
-    }
-    .SlideSection{
-        height: 300px;
-        transition: 1s;
-    }
-    .cardMenu{
-        width: 40%;
-    }
-    #sound-module{
-        height: 412px;
-        width: 60%;
-    }
-    #giantKnob{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: 1s;
-        width: 50%;
-        height: 600px;
-    }
-    #giantKnob img{
-        width: 10em;
-        height: 10em;
-    }
-    .containerSection1:hover #giantKnob{
-        transform: rotate(50deg);
-    }
-    .cardText{
-        width: 70%;
-    }
-    .card{
-        border-radius: 10px;
-        width: 500px;
-        height: 500px;
-        margin: 0px;
-        padding: 15px;
-    }
-    .card h4{
-        margin-top: 20px;
-        font-size: 1.5em;
-    }
-    .card p{
-        margin-top: 10px;
-        font-size: 1.3em;
-    }
-    .card img{
-        height: 300px;
-        width: 498px;
-    }
-    .cardText{
-        margin: 1%;
-    }
-    .cardText h3{
-        font-size: 2.2em;
-    }
-    .cardText p{
-        font-size: 2em;
-    }
-    .cardButton{
-        height: 50px;
-        width: 200px;
-        margin-top: 20px;
-    }
-    .containerSection1 .cardText{
-        font-size: 0.8em;
-        color: var(--textoPreto);
-        height: 80%;
-    }
-    #social img{
-        height: 40px;
-        width: 40px;
-    }
-    .containerFooter{
-        height: 60px;
-    }
-    footer{
-        margin-top: 25px;
-        height: 60px;
-    }
-    .SlideTexto h3{
-        font-size: 3em;
-    }
-    #SliderTexto1{
-        width: 20%;
-        border-radius: 10px;
-    }
-    #SliderTexto2{
-        width: 30%;
-        border-radius: 20px;
-    }
-    #SliderTexto3{
-        width: 40%;
-        border-radius: 30px;
-    }
-}
-/* PCs ou notebooks Full HD */
-@media (min-width:1400px){
-    .container{
-        max-width:1140px;   
     }
     #logo{
         height: 40%;
@@ -789,7 +631,7 @@ footer{
     }
     .top-content{
         background-image: url("./img/background2.jpg");
-        background-size: cover;
+        background-size: 100%;
         height: 800px;
         background-attachment:fixed;
         display: flex;
@@ -1029,11 +871,13 @@ footer{
     .containerSection,
     .containerSection1{
         height:600px;
+        flex-direction: row;
         transition: 1s;
     }
     .containerSection:hover,
     .containerSection1:hover{
         height:800px;
+        padding: 0;
     }
     .SlideSection{
         height: 300px;
@@ -1041,6 +885,11 @@ footer{
     }
     .cardMenu{
         width: 40%;
+        height: 98%;
+    }
+    .cardMenu a{
+        width: 100%;
+        height: 100%;
     }
     #sound-module{
         height: 250px;
@@ -1061,13 +910,10 @@ footer{
     .containerSection1:hover #giantKnob{
         transform: rotate(50deg);
     }
-    .cardText{
-        width: 70%;
-    }
     .card{
         border-radius: 10px;
         width: 500px;
-        height: 500px;
+        height: 95%;
         margin: 0px;
         padding: 15px;
     }
@@ -1078,6 +924,7 @@ footer{
     .card p{
         margin-top: 10px;
         font-size: 1.3em;
+        top: 0px;
     }
     .card img{
         height: 300px;
@@ -1085,6 +932,8 @@ footer{
     }
     .cardText{
         margin: 1%;
+        width: 70%;
+        flex-direction: column;
     }
     .cardText h3{
         font-size: 2.2em;
@@ -1114,7 +963,7 @@ footer{
         height: 60px;
     }
     .SlideTexto h3{
-        font-size: 3em;
+        font-size: 5em;
     }
     #SliderTexto1{
         width: 20%;
@@ -1127,5 +976,11 @@ footer{
     #SliderTexto3{
         width: 40%;
         border-radius: 30px;
+    }
+}
+/* PCs ou notebooks Full HD */
+@media (min-width:1400px){
+    .container{
+        max-width:1140px;   
     }
 }

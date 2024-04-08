@@ -338,7 +338,7 @@ body{
 }
 .containerSection1 .cardText{
     background-image: url("./img/lcdScreen.png");
-    background-size:contain;
+    background-size:100%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -631,7 +631,7 @@ footer{
     }
     .top-content{
         background-image: url("./img/background2.jpg");
-        background-size: 100%;
+        background-size: 170%;
         height: 800px;
         background-attachment:fixed;
         display: flex;
@@ -893,7 +893,7 @@ footer{
     }
     #sound-module{
         height: 250px;
-        width: 40%;
+        width: 600px;
     }
     #giantKnob{
         display: flex;

@@ -31,6 +31,7 @@ body{
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    
 }
 .mixerBottom{
     justify-content: center;
@@ -288,13 +289,13 @@ body{
     border: 1px solid var(--textoCinza);
     box-shadow: 0px 10px 25px var(--layoutPreto);
 }
-.cardMenu{
-    justify-content: center;
-}
 .cardMenu a{
     text-decoration: none;
     color: var(--textoPreto);
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .card{
     display: flex;
@@ -302,7 +303,7 @@ body{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: var(--layoutCardFundo);
+    background-color: var(--layoutCardFundo2);
 }
 .card img{
     border-radius: 10px;
@@ -331,13 +332,20 @@ body{
     background-color: var(--layoutMenuFundo);
     color: var(--textoBranco);
     flex-direction: row-reverse;
+    justify-content: space-between;
 }
 .containerSection1 .card{
     background-color: var(--layoutCardFundo1);
     color: var(--textoBranco)
 }
+.containerSection .cardMenu a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 .containerSection1 .cardText{
-    background-image: url("./img/lcdScreen.png");
+    background-image: url("./img/lcdScreen2.png");
     background-size:100%;
     text-align: center;
     display: flex;
@@ -355,9 +363,50 @@ body{
     align-items: center;
     transition: 1s;
 }
-#giantKnob img{
-    width: 10em;
-    height: 10em;
+.card{
+    background-color: var(--layoutCardFundo2);
+}
+.sectionCategoriaAula{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.menuCategoriaAula{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--layoutCardFundo);
+}
+.textoCategoriaAula{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+.sectionCategoriaAula{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.textoAulas{
+    display: flex;
+    justify-content: center;
+}
+.containerAulas{
+    background-color: var(--layoutCardFundo);
+}
+.cardMenuAulas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cardAulas{
+    background-color: var(--layoutCardFundo2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 #topo{
     position: fixed;
@@ -394,6 +443,7 @@ footer{
     --layoutSombraSecundaria: #BF5B04;
     --layoutCardFundo:#ebebeb;
     --layoutCardFundo1:#505050;
+    --layoutCardFundo2:#e4e3e3;
     --layoutMenuFundo: #1f1e22;
     --textoCinza: #6b6c75;
 }
@@ -442,13 +492,13 @@ footer{
         height: 100vh;
         position: fixed;
         top: 80px;
-        right: 0%;
+        right: -100%;
         width: 90%;
         transition: all 0.5s;
         z-index: 1;
     }   
     #check:checked~ul {
-        right: -100%;
+        right: 0%;
     }
     .divPortable ul li {
         padding: 17px 20px;
@@ -521,9 +571,9 @@ footer{
     .card{ 
         justify-content: center;
         padding: 10px;
-        background-color: rgba(0,0,0,0);
         height: 100%;
         width: 100%;
+        margin-top: 50px;
     }
     .containerSection1 .card{
         justify-content: center;
@@ -531,7 +581,6 @@ footer{
     .card img{
         height: 30%;
         width: 100%;
-        margin-top: 50px;
     }
     .card h4{
         font-size: 2em;
@@ -557,6 +606,27 @@ footer{
     #giantKnob img{
         height: 80px;
         width: 80px;
+    }
+    .menuCategoriaAula{
+        flex-direction: column;
+        width: 100%;
+    }
+    .menuCategoriaAula .card{
+        padding: 0;
+    }
+    .cardAulas{
+        margin-bottom: 25px;
+        height: 230px;
+        justify-content: space-around;
+    }
+    .cardAulas img{
+        height: 120px;
+    }
+    .cardAulas h4{
+        font-size: 2em;
+    }
+    .cardAulas p{
+        font-size: 1em;
     }
     #social img{
         height: 25px;
@@ -649,6 +719,7 @@ footer{
     }
     header{
         height: 250px;
+        margin-bottom: 25px;
     }
     .mixerBottom{
         background-image: url("./img/mixerBottom.png");
@@ -882,6 +953,7 @@ footer{
     .SlideSection{
         height: 300px;
         transition: 1s;
+        margin-bottom: 25px;
     }
     .cardMenu{
         width: 40%;
@@ -893,7 +965,7 @@ footer{
     }
     #sound-module{
         height: 250px;
-        width: 600px;
+        width: 40%;
     }
     #giantKnob{
         display: flex;
@@ -904,8 +976,8 @@ footer{
         height: 600px;
     }
     #giantKnob img{
-        width: 10em;
-        height: 10em;
+        width: 16em;
+        height: 16em;
     }
     .containerSection1:hover #giantKnob{
         transform: rotate(50deg);
@@ -919,11 +991,11 @@ footer{
     }
     .card h4{
         margin-top: 20px;
-        font-size: 1.5em;
+        font-size: 2em;
     }
     .card p{
-        margin-top: 10px;
-        font-size: 1.3em;
+        margin-top: 20px;
+        font-size: 1.2em;
         top: 0px;
     }
     .card img{
@@ -932,7 +1004,7 @@ footer{
     }
     .cardText{
         margin: 1%;
-        width: 70%;
+        width: 60%;
         flex-direction: column;
     }
     .cardText h3{
@@ -946,10 +1018,56 @@ footer{
         width: 200px;
         margin-top: 20px;
     }
-    .containerSection1 .cardText{
+    .containerSection1 .cardMenu{
+        color: var(--textoPreto);
+    }
+    .containerSection1 #sound-module{
         font-size: 0.6em;
         color: var(--textoPreto);
-        height: 80%;
+        height: 360px;
+        width: 60%;
+    }
+    .sectionCategoriaAula{
+        height: 700px;
+        flex-direction: column;
+    }
+    .menuCategoriaAula{
+        height: 600px;
+        width: 100%;
+    }
+    .textoCategoriaAula{
+        margin-top: 25px;
+        height: 70px;
+        font-size: 2.6em;
+    }
+    .sectionAula{
+        flex-direction: column;
+    }
+    .textoAulas{
+        margin-top: 25px;
+        height: 70px;
+        font-size: 2.6em;
+    }
+    .containerAulas{
+        
+    }
+    .cardMenuAulas{
+        flex-direction: row;
+    }
+    .cardAulas{
+        height: 385px;
+        width: 365px;
+        margin: 10px;
+        flex-direction: column;
+    }
+    .cardAulas h4{
+        font-size: 2em;
+    }
+    .cardAulas p{
+        font-size: 1.2em;
+    }
+    .cardAulas img{
+        width: 365px;
     }
     #social img{
         height: 40px;

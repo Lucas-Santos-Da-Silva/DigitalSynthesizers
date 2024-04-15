@@ -67,6 +67,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 .main div{
     width: 100%;
@@ -326,6 +327,72 @@ body{
     justify-content: center;
     margin-top: 25px;
 }
+#contact{
+    height: 800px;
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--textoBranco);
+}
+.contactform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+article{
+    height: 800px;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--layoutCorPrincipal);
+}
+.input_wrapper{
+    background-color: var(--layoutCardFundo1);
+    height: 70px;
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.input_wrapper input{
+    background-color: var(--layoutCardFundo1);
+    height: 100%;
+    width: 70%;
+    font-size: 1.2em;
+    color: var(--textoBranco);
+}
+.input_wrapper label{
+    font-weight: 1000;
+    color: var(--textoBranco);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position:static;
+    border-radius: 0px 20px 20px 0px;
+    background-color: var(--layoutCorSecundaria);
+    opacity: 100%;
+    width: 30%;
+}
+.textarea_wrapper textarea{
+    height: 250px;
+    width: 70%;
+    margin-top: 25px;
+    font-size: 1.5em;
+}
+.submit_wrapper input{
+    height: 50px;
+    width: 100px;
+}
 .card{
     display: flex;
     justify-content: space-between;
@@ -374,14 +441,12 @@ body{
     align-items: center;
 }
 .containerSection1 .cardText{
-    background-image: url("./img/lcdScreen2.png");
-    background-size:100%;
+    background-image: linear-gradient(#377E0F, #245702);
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 292px;
-    width: 880px;
+    border-radius: 20px;
 }
 .containerSection1 .cardText p{
     margin-top: 4%;
@@ -496,7 +561,6 @@ footer{
         background-size: 400%;
         background-position: -700px -100px;
     }
-    
     #logo img{
         margin-top: 55px;
         margin-bottom: 0;
@@ -552,13 +616,11 @@ footer{
     animation-duration: 2s;
 }
     .bannerFlex{
-        height: 50%;
-        justify-content: center;
+        height: 100%;
+        justify-content: space-around;
     }
     .bannerContainer{
         height: 50%;
-        flex-direction: column;
-        justify-content: center;
     }
     .bannerContainer h1{
         font-size: 2.3em;
@@ -591,6 +653,111 @@ footer{
     .containerSection1{
         flex-direction: column;
         padding: 0 0;
+    }
+    .linksTexto{
+        font-size: 2em;
+        text-align: center;
+        padding: 30px 0;
+        background-color: var(--layoutCardFundo1);
+        color: var(--textoBranco);
+    }
+    #LinksLinksLinksInterface a{
+        background-image: url("./img/mixer.jpg");
+        background-size: cover;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        color: var(--textoBranco);
+        font-size: 4em;
+        text-decoration: none;
+        font-weight: 1000;
+    }
+    #LinksLinksLinksMixers a{
+        background-image: url("./img/audio-effects1.jpg");
+        background-size: cover;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        color: var(--textoBranco);
+        font-size: 4em;
+        text-decoration: none;
+        font-weight: 1000;
+    }
+    #LinksLinksLinksTeclados a{
+        background-image: url("./img/audio-effects.jpg");
+        background-size: cover;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        color: var(--textoBranco);
+        font-size: 4em;
+        text-decoration: none;
+        font-weight: 1000;
+    }
+    #sobreImg{
+        display: flex;
+        justify-content: center;
+    }
+    #sobreImg img{
+        border-radius: 10%;
+        width: 80%;
+    }
+    #sobreTextoImagem img{
+        width: 100%;
+        height: 30px;
+    }
+    #sobreTextoTexto h3{
+        font-size: 1.7em;
+    }
+    #sobreTextoTexto p{
+        font-size: 1em;
+        margin-top: 25px;
+    }
+    #contact{
+        height: 820px;
+        width: 100%;
+    }
+    .contactform{
+        width: 98%;
+    }
+    article{
+        height: 100%;
+        width: 100%;
+    }
+    article h1{
+        font-size: 3em;
+    }
+    article p{
+        font-size: 1.1em;
+    }
+    .input_wrapper{
+        height: 70px;
+        width: 100%;
+    }
+    .input_wrapper input{
+        height: 100%;
+        width: 100%;
+    }
+    .input_wrapper label{
+        font-size: 1.5em;
+        font-weight: 1000;
+    }
+    .textarea_wrapper textarea{
+        height: 250px;
+        width: 95%;
+    }
+    .submit_wrapper input{
+        height: 50px;
+        width: 80px;
+    }
+    .sectionheader{
+        margin: 5% 0;
     }
     .cardMenu{
         height: 100%;
@@ -696,6 +863,9 @@ footer{
         height: 35%;
         width: 50%;
     }
+    #sobreImg img{
+        width: 40%;
+    }
 }
 /* Tablet portrait */
 @media (min-width:768px){
@@ -728,6 +898,12 @@ footer{
     .card img{
         width: 400px;
         height: 250px;
+    }
+    .bannerContainer h1{
+        font-size: 3em;
+    }
+    .bannerContainer h2{
+        font-size: 1.5em;
     }
 }
 /* PCs, notebooks HD ou TV */
@@ -1023,16 +1199,12 @@ footer{
         width: 100%;
         height: 100%;
     }
-    #sound-module{
-        height: 250px;
-        width: 40%;
-    }
     #giantKnob{
         display: flex;
         justify-content: center;
         align-items: center;
         transition: 1s;
-        width: 50%;
+        width: 40%;
         height: 600px;
     }
     #giantKnob img{
@@ -1042,52 +1214,92 @@ footer{
     .containerSection1:hover #giantKnob{
         transform: rotate(50deg);
     }
+    .sobreContainer{
+        margin: 25px 0px 100px 0px;
+    }
     #sobreImg{
         display: flex;
         justify-content: center;
     }
     #sobreImg img{
         border-radius: 10%;
+        width: 25%;
     }
     #sobreTextoTexto h3{
         text-align: center;
-        font-size: 4em;
+        font-size: 2.5em;
     }
     #sobreTextoTexto p{
-        font-size: 1.7em;
+        font-size: 1.5em;
         margin-top: 25px;
     }
-    .sectionLinks{
-        text-align: center;
+    #sobreTextoImagem img{
+        width: 70%;
+        height: 80px;
     }
-    .sectionLinks div h3{
-        font-size: 5em;
-        margin-top: 25px;
-    }
-    .linksMenu{
+    #contact{
+        height: 950px;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        color: var(--textoBranco);
     }
-    .links{
-        background-color: var(--layoutCardFundo2);
-        border-radius: 30px;
+    article{
+        height: 100%;
+        width: 50%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--layoutCorPrincipal);
+    }
+    article h3{
+        font-size: 3em;
+    }
+    article p{
+        font-size: 1.8em;
+    }
+    .input_wrapper{
+        background-color: var(--layoutCardFundo1);
+        height: 70px;
+        width: 95%;
         margin-top: 25px;
-        height: 200px;
-        width: 1500px;
-        font-size: 2em;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
     }
-    .links p{
-        margin-top: 25px;
-        font-size: 1em;
+    .input_wrapper input{
+        background-color: var(--layoutCardFundo1);
+        height: 100%;
+        width: 80%;
     }
-    .links a{
-        color: var(--selectedItem);
+    .input_wrapper label{
+        font-size: 1.5em;
+        font-weight: 1000;
+        color: var(--textoBranco);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position:static;
+        border-radius: 0px 20px 20px 0px;
+        background-color: var(--layoutCorSecundaria);
+        opacity: 100%;
     }
-    .containerSectionEquipamentos{
-        
+    .textarea_wrapper{
+        width: 80%;
+        margin-top: 40px;
+    }
+    .textarea_wrapper textarea{
+        height: 250px;
+        width: 80%;
+    }
+    .submit_wrapper input{
+        height: 50px;
+        width: 100px;
     }
     .card{
         border-radius: 10px;
@@ -1132,6 +1344,10 @@ footer{
         font-size: 0.6em;
         color: var(--textoPreto);
         height: 360px;
+        width: 60%;
+    }
+    #sound-module .cardText{
+        height: 198px;
         width: 60%;
     }
     .sectionCategoriaAula{

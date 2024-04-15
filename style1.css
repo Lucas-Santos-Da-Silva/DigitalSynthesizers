@@ -19,7 +19,13 @@ body{
 }
 #logo{
     display: flex;
-    justify-content: center; 
+    justify-content: space-around;
+    flex-direction: row; 
+    align-items: center;
+}
+#logo a{
+    display: flex;
+    justify-content: center;
 }
 .top-content{
     background-image: url("./img/background2.jpg");
@@ -47,11 +53,20 @@ body{
     text-align: center;
     flex-direction: column;
     padding-top: 3%; 
+    width: 100%;
+}
+.bannerContainer h1{
+    width: 100%;
 }
 .bannerContainer h2{
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     padding: 10px 0;
+}
+.bannerFlex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .main div{
     width: 100%;
@@ -297,6 +312,20 @@ body{
     justify-content: center;
     align-items: center;
 }
+#sobreImg{
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+}
+#sobreTextoTexto{
+    text-align: center;
+    margin: 25px;
+}
+#sobreTextoImagem{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
 .card{
     display: flex;
     justify-content: space-between;
@@ -456,21 +485,23 @@ footer{
     .container{
         max-width:1000px;
     }
-    nav,.cardText,#sound-module{
+    nav,.cardText,#sound-module,#logo h3{
         display: none;
     }
     .divPortable{
         display: flex;
     }
     .top-content{
-        height: 600px;
+        height: 500px;
         background-size: 400%;
         background-position: -700px -100px;
     }
+    
     #logo img{
         margin-top: 55px;
         margin-bottom: 0;
-        height: 120px;
+        height: 40%;
+        width: 40%;
     }
     #check {
         display: none;
@@ -521,11 +552,11 @@ footer{
     animation-duration: 2s;
 }
     .bannerFlex{
-        height: 480px;
+        height: 50%;
         justify-content: center;
     }
     .bannerContainer{
-        height: 100%;
+        height: 50%;
         flex-direction: column;
         justify-content: center;
     }
@@ -533,7 +564,8 @@ footer{
         font-size: 2.3em;
     }
     .bannerContainer h2{
-        font-size: 1.3em;
+        font-size: 1em;
+        background-color: rgba(0, 0, 0, 0.5);
     }
     .SlideSection{
         padding: 0;
@@ -554,7 +586,7 @@ footer{
     .containerSection,
     .containerSection1{
         height: 700px;
-        padding: 0 10px;
+        padding: 0
     }
     .containerSection1{
         flex-direction: column;
@@ -674,6 +706,18 @@ footer{
        background-size: 200%;
        height: 685px;
     }
+    .bannerContainer h1{
+        font-size: 3em;
+    }
+    .bannerContainer h2{
+        font-size: 1.7em;
+    }
+    #logo img{
+        margin-top: 55px;
+        margin-bottom: 0;
+        height: 30%;
+        width: 30%;
+    }
 }
 /* Tablet landscape */
 @media (min-width:992px){
@@ -681,40 +725,54 @@ footer{
         max-width:960px;
         font-size: 30px;
     }
+    .card img{
+        width: 400px;
+        height: 250px;
+    }
 }
 /* PCs, notebooks HD ou TV */
 @media (min-width:1200px){
     .container{
         max-width:1000px;
     }
-    nav,.cardText,#sound-module{
+    nav,.cardText,#sound-module, #logo h3{
         display: flex;
     }
     #logo{
-        height: 40%;
-        width: 100%;
-       
+        height: 250px;
+        width: 1087px;
+        background-image: url("./img/rackCover.png");
+        font-size: 3em;
+        color: var(--textoBranco);
     }
     #logo img{
-        height: 9em;
-        width: 11em;
-        margin-top: 15px;
+        height: 200px;
+        width: 250px;
+        margin: 0;
     }
     .top-content{
         background-image: url("./img/background2.jpg");
         background-size: 170%;
-        height: 680px;
+        height: 750px;
         background-attachment:fixed;
         display: flex;
         flex-direction: column;
     }
     .bannerFlex{
-        height: 405px;
-        display: flex;
+        height: 500px;
         flex-direction: column;
     }
     .bannerContainer{
-        height: 60%;
+        height: 250px;
+        width: 1087px;
+        background-image: url("./img/rackCover.png");
+        padding: 0;
+    }
+    .bannerContainer h1{
+        font-size: 4em;
+    }
+    .bannerContainer h2{
+        font-size: 1.5em;
     }
     .menuFlex{
         width: 100%;
@@ -722,7 +780,6 @@ footer{
     }
     header{
         height: 250px;
-        margin-bottom: 25px;
     }
     .mixerBottom{
         background-image: url("./img/mixerBottom.png");
@@ -782,7 +839,7 @@ footer{
     }
     .fader p{
         position: relative;
-        top:215px;
+        top:225px;
         color: var(--textoPreto);
         font-weight: 800;
         font-size: 1.1em;
@@ -984,6 +1041,53 @@ footer{
     }
     .containerSection1:hover #giantKnob{
         transform: rotate(50deg);
+    }
+    #sobreImg{
+        display: flex;
+        justify-content: center;
+    }
+    #sobreImg img{
+        border-radius: 10%;
+    }
+    #sobreTextoTexto h3{
+        text-align: center;
+        font-size: 4em;
+    }
+    #sobreTextoTexto p{
+        font-size: 1.7em;
+        margin-top: 25px;
+    }
+    .sectionLinks{
+        text-align: center;
+    }
+    .sectionLinks div h3{
+        font-size: 5em;
+        margin-top: 25px;
+    }
+    .linksMenu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .links{
+        background-color: var(--layoutCardFundo2);
+        border-radius: 30px;
+        margin-top: 25px;
+        height: 200px;
+        width: 1500px;
+        font-size: 2em;
+    }
+    .links p{
+        margin-top: 25px;
+        font-size: 1em;
+    }
+    .links a{
+        color: var(--selectedItem);
+    }
+    .containerSectionEquipamentos{
+        
     }
     .card{
         border-radius: 10px;

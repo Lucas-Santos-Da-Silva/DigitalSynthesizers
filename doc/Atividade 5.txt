@@ -1,4 +1,0 @@
-Desenvolvimento da página de conteúdo
-
-- wireframe
-- página com links para o conteúdo(conforme documentação da estrutura do site)

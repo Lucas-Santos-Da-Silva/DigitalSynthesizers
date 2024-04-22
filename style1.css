@@ -538,6 +538,15 @@ article{
     justify-content: center;
     align-items: center;
 }
+.linksTexto{
+    width: 1200px;
+}
+#LinksLinksLinksInterface a, #LinksLinksLinksMixers a, #LinksLinksLinksTeclados a{
+    width: 1200px;
+}
+#linksLinks{
+    width: 100%;
+}
 #topo{
     position: fixed;
     bottom:10px;
@@ -878,6 +887,12 @@ footer{
         width: 60%;
         font-size: 1.5em;
     }
+    .linksTexto{
+        width: 375px;
+    }
+    #LinksLinksLinksInterface a, #LinksLinksLinksMixers a, #LinksLinksLinksTeclados a{
+        width: 375px;
+    }
     #social img{
         height: 25px;
     }
@@ -896,6 +911,12 @@ footer{
     .top-content{
         background-size: 230%;
      }
+     .linksTexto{
+        width: 667px;
+    }
+    #LinksLinksLinksInterface a, #LinksLinksLinksMixers a, #LinksLinksLinksTeclados a{
+        width: 667px;
+    }
     .containerSection,
     .containerSection1{
         height: 500px;
@@ -1032,6 +1053,12 @@ footer{
         max-width:960px;
         font-size: 30px;
     }
+    .linksTexto{
+        width: 992px;
+    }
+    #LinksLinksLinksInterface a, #LinksLinksLinksMixers a, #LinksLinksLinksTeclados a{
+        width: 992px;
+    }
     .card img{
         width: 400px;
         height: 250px;
@@ -1060,6 +1087,12 @@ footer{
 @media (min-width:1200px){
     .container{
         max-width:1000px;
+    }
+    .linksTexto{
+        width: 1200px;
+    }
+    #LinksLinksLinksInterface a, #LinksLinksLinksMixers a, #LinksLinksLinksTeclados a{
+        width: 1200px;
     }
     nav,.cardText,#sound-module, #logo h3{
         display: flex;
@@ -1570,6 +1603,7 @@ footer{
     }
     #LinksLinksLinksInterface a, #LinksLinksLinksMixers a, #LinksLinksLinksTeclados a{
     height: 500px;
+
     }
     #LinksLinksLinksInterface a:hover, #LinksLinksLinksMixers a:hover, #LinksLinksLinksTeclados a:hover{
         height: 600px;
@@ -1601,11 +1635,18 @@ footer{
         width: 40%;
         border-radius: 30px;
     }
+
 }
 /* PCs ou notebooks Full HD */
 @media (min-width:1400px){
     .container{
         max-width:1140px;   
+    }
+    .linksTexto{
+        width: 100%;
+    }
+    #LinksLinksLinksInterface a, #LinksLinksLinksMixers a, #LinksLinksLinksTeclados a{
+        width: 2000px;
     }
     #contact{
         height: 1350px;

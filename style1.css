@@ -491,6 +491,11 @@ article{
     display: flex;
     flex-direction: column;
 }
+.subTextoAulas{
+    background-image: url("./img/audio-recording.jpg");
+    background-size: cover;
+    color: var(--textoBranco);
+}
 .textoAulas,.subTextoAulas{
     display: flex;
     flex-direction: column;
@@ -523,29 +528,22 @@ article{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-}
-.sectionLinks h3{
-    margin-bottom: 25px;
 }
 .links{
     background-color: var(--layoutCardFundo);
-    margin-bottom: 15px;
+    margin-top: 25px;
+    padding: 25px 0px;
     width: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    height: 115px;
+    transition: 1s;
 }
-.linksTexto{
-    width: 1200px;
-}
-#LinksLinksLinksInterface a, #LinksLinksLinksMixers a, #LinksLinksLinksTeclados a{
-    width: 1200px;
-}
-#linksLinks{
-    width: 100%;
+.links:hover{
+    height: 200px;
 }
 #topo{
     position: fixed;
@@ -698,35 +696,6 @@ footer{
     .containerSection1{
         flex-direction: column;
         padding: 0 0;
-    }
-    .linksTexto{
-        font-size: 2em;
-        text-align: center;
-        padding: 30px 0;
-        background-color: var(--layoutCardFundo1);
-        color: var(--textoBranco);
-    }
-    #LinksLinksLinksInterface a, #LinksLinksLinksMixers a, #LinksLinksLinksTeclados a{
-        background-size: cover;
-        height: 400px;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        color: var(--textoBranco);
-        font-size: 4em;
-        text-decoration: none;
-        font-weight: 1000;
-        transition: 1s;
-    }
-    #LinksLinksLinksInterface a{
-        background-image: url("./img/mixer.jpg");
-    }
-    #LinksLinksLinksMixers a{
-        background-image: url("./img/audio-effects1.jpg");
-    }
-    #LinksLinksLinksTeclados a{
-        background-image: url("./img/audio-effects.jpg");
     }
     #sobreImg{
         display: flex;
@@ -887,11 +856,61 @@ footer{
         width: 60%;
         font-size: 1.5em;
     }
-    .linksTexto{
-        width: 375px;
+    .equipamentosContainer{
+        text-align: center;
+        
     }
-    #LinksLinksLinksInterface a, #LinksLinksLinksMixers a, #LinksLinksLinksTeclados a{
-        width: 375px;
+    .equipamentosContainer a{
+        color: var(--textoBranco);
+        font-size: 2.5em;
+        font-weight: 900;
+    }
+    #equipamentosInterface a{
+        height: 400px;
+        background-image: url("./img/audio-recording.jpg");
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: 1s;
+    }
+    #equipamentosMixer a{
+        height: 400px;
+        background-image: url("./img/live-sound.jpg");
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: 1s;
+    }
+    #equipamentosTeclados a{
+        height: 400px;
+        background-image: url("./img/guitar.jpg");
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: 1s;
+    }
+    #equipamentosInterface a:hover, #equipamentosMixer a:hover, #equipamentosTeclados a:hover{
+        height: 450px;
+        font-size: 3em;
+    }
+    .linksTexto h3{
+        background-image: url("./img/computer-music1.jpg");
+        background-size: cover;
+        background-position:0cm;
+        height: 300px;
+        font-size: 3em;
+        color: var(--textoBranco);
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #contact article{
+        border-radius: 0%;
     }
     #social img{
         height: 25px;
@@ -911,12 +930,6 @@ footer{
     .top-content{
         background-size: 230%;
      }
-     .linksTexto{
-        width: 667px;
-    }
-    #LinksLinksLinksInterface a, #LinksLinksLinksMixers a, #LinksLinksLinksTeclados a{
-        width: 667px;
-    }
     .containerSection,
     .containerSection1{
         height: 500px;
@@ -1053,12 +1066,6 @@ footer{
         max-width:960px;
         font-size: 30px;
     }
-    .linksTexto{
-        width: 992px;
-    }
-    #LinksLinksLinksInterface a, #LinksLinksLinksMixers a, #LinksLinksLinksTeclados a{
-        width: 992px;
-    }
     .card img{
         width: 400px;
         height: 250px;
@@ -1087,12 +1094,6 @@ footer{
 @media (min-width:1200px){
     .container{
         max-width:1000px;
-    }
-    .linksTexto{
-        width: 1200px;
-    }
-    #LinksLinksLinksInterface a, #LinksLinksLinksMixers a, #LinksLinksLinksTeclados a{
-        width: 1200px;
     }
     nav,.cardText,#sound-module, #logo h3{
         display: flex;
@@ -1372,7 +1373,6 @@ footer{
     .SlideSection{
         height: 300px;
         transition: 1s;
-        margin-bottom: 25px;
     }
     .cardMenu{
         width: 40%;
@@ -1551,7 +1551,6 @@ footer{
         flex-direction: row;
     }
     .textoCategoriaAula, .textoAulas,.subTextoAulas{
-        margin-top: 25px;
         height: 150px;
         font-size: 2.6em;
         flex-direction: column;
@@ -1568,10 +1567,11 @@ footer{
         font-size: 1em;
     }
     .subTextoAulas h3{
-        font-size: 1.2em;
+        font-size: 1em;
+        margin-bottom: 25px;
     }
     .subTextoAulas h4{
-        font-size: 0.9em;
+        font-size: 0.6em;
     }
     .subTextoAulas .cardButton{
         height: 70px;
@@ -1601,14 +1601,6 @@ footer{
         width: 250px;
         height: 170px;
     }
-    #LinksLinksLinksInterface a, #LinksLinksLinksMixers a, #LinksLinksLinksTeclados a{
-    height: 500px;
-
-    }
-    #LinksLinksLinksInterface a:hover, #LinksLinksLinksMixers a:hover, #LinksLinksLinksTeclados a:hover{
-        height: 600px;
-        transition: 1s;
-    }
     #social img{
         height: 40px;
         width: 40px;
@@ -1617,7 +1609,6 @@ footer{
         height: 60px;
     }
     footer{
-        margin-top: 25px;
         height: 60px;
     }
     .SlideTexto h3{
@@ -1635,18 +1626,14 @@ footer{
         width: 40%;
         border-radius: 30px;
     }
-
+    #contact article{
+        border-radius: 5%;
+    }
 }
 /* PCs ou notebooks Full HD */
 @media (min-width:1400px){
     .container{
         max-width:1140px;   
-    }
-    .linksTexto{
-        width: 100%;
-    }
-    #LinksLinksLinksInterface a, #LinksLinksLinksMixers a, #LinksLinksLinksTeclados a{
-        width: 2000px;
     }
     #contact{
         height: 1350px;
